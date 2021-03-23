@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -13,1166 +13,397 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Sheet
+S 1050 1800 1550 700 
+U 60BA4931
+F0 "battery_management" 50
+F1 "battery_management.sch" 50
+F2 "VCC_3V3" O R 2600 2300 50 
+F3 "VCC_POWER" O R 2600 2000 50 
+$EndSheet
 $Comp
-L Connector:USB_B_Micro J?
-U 1 1 606FDED7
-P 1100 2700
-F 0 "J?" H 1157 3167 50  0000 C CNN
-F 1 "USB_B_Micro" H 1157 3076 50  0000 C CNN
-F 2 "" H 1250 2650 50  0001 C CNN
-F 3 "~" H 1250 2650 50  0001 C CNN
-	1    1100 2700
+L Connector_60PIN:55560-0607 J?
+U 1 1 60CCE92F
+P 6700 2200
+F 0 "J?" H 6700 2365 50  0000 C CNN
+F 1 "55560-0607" H 6700 2274 50  0000 C CNN
+F 2 "555600607" H 6450 -1050 50  0001 L CNN
+F 3 "https://www.molex.com/pdm_docs/sd/555600607_sd.pdf" H 6450 -1150 50  0001 L CNN
+F 4 "Molex SLIMSTACK 55560, 0.5mm Pitch, 60 Way, 2 Row, Straight PCB Header, Surface Mount" H 6450 -1250 50  0001 L CNN "Description"
+F 5 "1.35" H 6450 -1350 50  0001 L CNN "Height"
+F 6 "Molex" H 6450 -1450 50  0001 L CNN "Manufacturer_Name"
+F 7 "55560-0607" H 6450 -1550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "538-55560-0607" H 6450 -1650 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Molex/55560-0607/?qs=f2bKcALV%252B9xylowEXhTzRw%3D%3D" H 6450 -1750 50  0001 L CNN "Mouser Price/Stock"
+	1    6700 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 2800 1400 2700
+	6250 2700 6000 2700
 Wire Wire Line
-	1000 3100 1000 3250
+	6250 2800 6000 2800
 Wire Wire Line
-	1100 3100 1100 3250
+	6250 2900 6000 2900
 Wire Wire Line
-	1400 2900 1400 3250
+	6250 3000 6000 3000
 Wire Wire Line
-	1400 3250 1100 3250
-Connection ~ 1100 3250
+	6250 3500 6000 3500
 Wire Wire Line
-	1100 3250 1000 3250
+	6250 3600 6000 3600
+Wire Wire Line
+	6250 4100 6000 4100
+Wire Wire Line
+	6250 5200 6000 5200
+Wire Wire Line
+	7150 2300 7400 2300
+Wire Wire Line
+	7150 3600 7400 3600
+Wire Wire Line
+	7150 4300 7400 4300
+Wire Wire Line
+	7150 5200 7400 5200
+Wire Wire Line
+	6000 2700 6000 2800
+Connection ~ 6000 2800
+Wire Wire Line
+	6000 2800 6000 2900
+Connection ~ 6000 2900
+Wire Wire Line
+	6000 2900 6000 3000
+Connection ~ 6000 3000
+Wire Wire Line
+	6000 3000 6000 3500
+Connection ~ 6000 3500
+Wire Wire Line
+	6000 3500 6000 3600
+Connection ~ 6000 3600
+Wire Wire Line
+	6000 3600 6000 4100
+Connection ~ 6000 4100
+Wire Wire Line
+	6000 4100 6000 5200
+Connection ~ 6000 5200
+Wire Wire Line
+	6000 5200 6000 5600
+Wire Wire Line
+	7400 2300 7400 3600
+Connection ~ 7400 3600
+Wire Wire Line
+	7400 3600 7400 4300
+Connection ~ 7400 4300
+Wire Wire Line
+	7400 4300 7400 5200
+Connection ~ 7400 5200
+Wire Wire Line
+	7400 5200 7400 5600
 $Comp
 L power:GND #PWR?
-U 1 1 6071379E
-P 1100 3250
-F 0 "#PWR?" H 1100 3000 50  0001 C CNN
-F 1 "GND" H 1105 3077 50  0000 C CNN
-F 2 "" H 1100 3250 50  0001 C CNN
-F 3 "" H 1100 3250 50  0001 C CNN
-	1    1100 3250
-	1    0    0    -1  
-$EndComp
-Text GLabel 6400 5550 0    50   Input ~ 0
-VCC_3V8
-Wire Wire Line
-	6800 5550 6800 5700
-$Comp
-L Device:C C?
-U 1 1 6087E558
-P 6800 5850
-F 0 "C?" H 6915 5896 50  0000 L CNN
-F 1 "0.1uF" H 6915 5805 50  0000 L CNN
-F 2 "" H 6838 5700 50  0001 C CNN
-F 3 "~" H 6800 5850 50  0001 C CNN
-	1    6800 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6087EA91
-P 6800 6000
-F 0 "#PWR?" H 6800 5750 50  0001 C CNN
-F 1 "GND" H 6805 5827 50  0000 C CNN
-F 2 "" H 6800 6000 50  0001 C CNN
-F 3 "" H 6800 6000 50  0001 C CNN
-	1    6800 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 5550 7350 5700
-$Comp
-L Device:C C?
-U 1 1 608833FF
-P 7350 5850
-F 0 "C?" H 7465 5896 50  0000 L CNN
-F 1 "10uF" H 7465 5805 50  0000 L CNN
-F 2 "" H 7388 5700 50  0001 C CNN
-F 3 "~" H 7350 5850 50  0001 C CNN
-	1    7350 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60883BB2
-P 7350 6000
-F 0 "#PWR?" H 7350 5750 50  0001 C CNN
-F 1 "GND" H 7355 5827 50  0000 C CNN
-F 2 "" H 7350 6000 50  0001 C CNN
-F 3 "" H 7350 6000 50  0001 C CNN
-	1    7350 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7850 5550 7850 5700
-Wire Wire Line
-	8400 5550 8400 5700
-Connection ~ 8400 5550
-$Comp
-L Device:C C?
-U 1 1 60899297
-P 7850 5850
-F 0 "C?" H 7965 5896 50  0000 L CNN
-F 1 "10uF" H 7965 5805 50  0000 L CNN
-F 2 "" H 7888 5700 50  0001 C CNN
-F 3 "~" H 7850 5850 50  0001 C CNN
-	1    7850 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60899A2D
-P 8400 5850
-F 0 "C?" H 8515 5896 50  0000 L CNN
-F 1 "0.1uF" H 8515 5805 50  0000 L CNN
-F 2 "" H 8438 5700 50  0001 C CNN
-F 3 "~" H 8400 5850 50  0001 C CNN
-	1    8400 5850
+U 1 1 60CD1F32
+P 6000 5600
+F 0 "#PWR?" H 6000 5350 50  0001 C CNN
+F 1 "GND" H 6005 5427 50  0000 C CNN
+F 2 "" H 6000 5600 50  0001 C CNN
+F 3 "" H 6000 5600 50  0001 C CNN
+	1    6000 5600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 6089A1D3
-P 7850 6000
-F 0 "#PWR?" H 7850 5750 50  0001 C CNN
-F 1 "GND" H 7855 5827 50  0000 C CNN
-F 2 "" H 7850 6000 50  0001 C CNN
-F 3 "" H 7850 6000 50  0001 C CNN
-	1    7850 6000
+U 1 1 60CD211F
+P 7400 5600
+F 0 "#PWR?" H 7400 5350 50  0001 C CNN
+F 1 "GND" H 7405 5427 50  0000 C CNN
+F 2 "" H 7400 5600 50  0001 C CNN
+F 3 "" H 7400 5600 50  0001 C CNN
+	1    7400 5600
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 6089A840
-P 8400 6000
-F 0 "#PWR?" H 8400 5750 50  0001 C CNN
-F 1 "GND" H 8405 5827 50  0000 C CNN
-F 2 "" H 8400 6000 50  0001 C CNN
-F 3 "" H 8400 6000 50  0001 C CNN
-	1    8400 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6800 5550 7350 5550
-Connection ~ 6800 5550
-Wire Wire Line
-	7850 5550 8400 5550
-Wire Wire Line
-	8400 5550 8700 5550
-Text GLabel 8700 5550 2    50   Output ~ 0
-VCC_IN
-$Comp
-L Device:FerriteBead FB?
-U 1 1 60A87B2C
-P 7600 5550
-F 0 "FB?" V 7326 5550 50  0000 C CNN
-F 1 "FerriteBead" V 7417 5550 50  0000 C CNN
-F 2 "" V 7530 5550 50  0001 C CNN
-F 3 "~" H 7600 5550 50  0001 C CNN
-	1    7600 5550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7750 5550 7850 5550
-Connection ~ 7850 5550
-Wire Wire Line
-	7450 5550 7350 5550
-Connection ~ 7350 5550
-$Comp
-L Diode_TVS:SMAJ5.0A D?
-U 1 1 60BC4610
-P 1750 2800
-F 0 "D?" V 1704 2930 50  0000 L CNN
-F 1 "SMAJ5.0A" V 1795 2930 50  0000 L CNN
-F 2 "DIOM5026X229N" H 1500 2550 50  0001 L CNN
-F 3 "https://detail.tmall.com/item.htm?id=548354020241&ali_refid=a3_430583_1006:1109983619:N:3Uw9kZ3UMDT/QL57nh1fXA==:ab063b49c94624768a940a913313feb0&ali_trackid=1_ab063b49c94624768a940a913313feb0&spm=a230r.1.14.1" H 1500 2450 50  0001 L CNN
-F 4 "BOURNS - SMAJ5.0A - TVS Diode, TRANSZORB SMAJ Series, Unidirectional, 5 V, 9.2 V, DO-214AC (SMA), 2 Pins" H 1500 2350 50  0001 L CNN "Description"
-F 5 "2.29" H 1500 2250 50  0001 L CNN "Height"
-F 6 "Bourns" H 1500 2150 50  0001 L CNN "Manufacturer_Name"
-F 7 "SMAJ5.0A" H 1500 2050 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "652-SMAJ5.0A" H 1500 1950 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Bourns/SMAJ50A?qs=A3H9pljuJ8RbLIvzFxDfUA%3D%3D" H 1500 1850 50  0001 L CNN "Mouser Price/Stock"
-F 10 "SMAJ5.0A" H 1500 1750 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/smaj5.0a/bourns" H 1500 1650 50  0001 L CNN "Arrow Price/Stock"
-	1    1750 2800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1750 2500 1750 2650
-Wire Wire Line
-	1750 2950 1750 3250
-$Comp
-L power:GND #PWR?
-U 1 1 60BD896D
-P 1750 3250
-F 0 "#PWR?" H 1750 3000 50  0001 C CNN
-F 1 "GND" H 1755 3077 50  0000 C CNN
-F 2 "" H 1750 3250 50  0001 C CNN
-F 3 "" H 1750 3250 50  0001 C CNN
-	1    1750 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 60CF98FF
-P 1350 5950
-F 0 "J?" H 1268 5625 50  0000 C CNN
-F 1 "Battery_175mAh" H 1268 5716 50  0000 C CNN
-F 2 "" H 1350 5950 50  0001 C CNN
-F 3 "~" H 1350 5950 50  0001 C CNN
-	1    1350 5950
+L Connector_Generic:Conn_01x03 J?
+U 1 1 60CD2EAD
+P 3600 1200
+F 0 "J?" H 3518 875 50  0000 C CNN
+F 1 "Conn_01x03" H 3518 966 50  0000 C CNN
+F 2 "" H 3600 1200 50  0001 C CNN
+F 3 "~" H 3600 1200 50  0001 C CNN
+	1    3600 1200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1700 5950 1550 5950
-$Comp
-L Buck_Boost_Converter:TPS63050YFFR IC?
-U 1 1 60D6AE64
-P 7500 1650
-F 0 "IC?" H 7500 2315 50  0000 C CNN
-F 1 "TPS63050YFFR" H 7500 2224 50  0000 C CNN
-F 2 "BGA12C40P3X4_129X169X62" H 7050 1000 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps63050.pdf" H 7050 900 50  0001 L CNN
-F 4 "TPS6305x Single Inductor Buck-Boost with 1-A Switches and Adjustable Soft Start" H 7050 800 50  0001 L CNN "Description"
-F 5 "0.625" H 7050 700 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 7050 600 50  0001 L CNN "Manufacturer_Name"
-F 7 "TPS63050YFFR" H 7050 500 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "595-TPS63050YFFR" H 7050 400 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS63050YFFR/?qs=sU0fTKI0LumUuuIaDTttbQ%3D%3D" H 7050 300 50  0001 L CNN "Mouser Price/Stock"
-F 10 "TPS63050YFFR" H 7050 200 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/tps63050yffr/texas-instruments" H 7050 100 50  0001 L CNN "Arrow Price/Stock"
-	1    7500 1650
-	1    0    0    -1  
-$EndComp
+	6000 2000 6000 2300
 Wire Wire Line
-	6850 1300 6850 850 
+	6000 2600 6250 2600
 Wire Wire Line
-	6850 850  7350 850 
+	6250 2500 6000 2500
+Connection ~ 6000 2500
 Wire Wire Line
-	8150 850  8150 1300
-$Comp
-L Device:L L?
-U 1 1 60D76432
-P 7500 850
-F 0 "L?" V 7690 850 50  0000 C CNN
-F 1 "1.5 uH" V 7599 850 50  0000 C CNN
-F 2 "" H 7500 850 50  0001 C CNN
-F 3 "~" H 7500 850 50  0001 C CNN
-	1    7500 850 
-	0    -1   -1   0   
-$EndComp
+	6000 2500 6000 2600
 Wire Wire Line
-	7650 850  8150 850 
+	6250 2400 6000 2400
+Connection ~ 6000 2400
 Wire Wire Line
-	8150 1450 8600 1450
+	6000 2400 6000 2500
 Wire Wire Line
-	8150 1950 8300 1950
+	6250 2300 6000 2300
+Connection ~ 6000 2300
 Wire Wire Line
-	8150 1700 8450 1700
+	6000 2300 6000 2400
 Wire Wire Line
-	8450 1700 8450 1850
-Wire Wire Line
-	8600 1450 8600 1500
-Connection ~ 8600 1450
-Wire Wire Line
-	8600 1450 9500 1450
+	5650 3200 5650 2800
 $Comp
 L Device:R_US R?
-U 1 1 60DB1744
-P 8600 1650
-F 0 "R?" H 8668 1696 50  0000 L CNN
-F 1 "681 k" H 8668 1605 50  0000 L CNN
-F 2 "" V 8640 1640 50  0001 C CNN
-F 3 "~" H 8600 1650 50  0001 C CNN
-	1    8600 1650
+U 1 1 60CD72CF
+P 5650 2650
+F 0 "R?" H 5718 2696 50  0000 L CNN
+F 1 "10k" H 5718 2605 50  0000 L CNN
+F 2 "" V 5690 2640 50  0001 C CNN
+F 3 "~" H 5650 2650 50  0001 C CNN
+	1    5650 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8600 1800 8600 1850
+	5650 2500 5650 2000
+Connection ~ 5650 2000
 Wire Wire Line
-	8450 1850 8600 1850
-Connection ~ 8600 1850
+	5650 2000 6000 2000
 Wire Wire Line
-	8600 1850 8600 1900
+	2600 2000 3600 2000
+Wire Wire Line
+	6250 3200 5650 3200
+Wire Wire Line
+	5200 2000 5200 2200
+Connection ~ 5200 2000
+Wire Wire Line
+	5200 2000 5650 2000
+Wire Wire Line
+	4750 2000 4750 2200
+Connection ~ 4750 2000
+Wire Wire Line
+	4750 2000 5200 2000
+$Comp
+L power:GND #PWR?
+U 1 1 60CDB770
+P 5200 2600
+F 0 "#PWR?" H 5200 2350 50  0001 C CNN
+F 1 "GND" H 5205 2427 50  0000 C CNN
+F 2 "" H 5200 2600 50  0001 C CNN
+F 3 "" H 5200 2600 50  0001 C CNN
+	1    5200 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60CDB9A5
+P 4750 2600
+F 0 "#PWR?" H 4750 2350 50  0001 C CNN
+F 1 "GND" H 4755 2427 50  0000 C CNN
+F 2 "" H 4750 2600 50  0001 C CNN
+F 3 "" H 4750 2600 50  0001 C CNN
+	1    4750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60CDBC11
+P 4750 2350
+F 0 "C?" H 4865 2396 50  0000 L CNN
+F 1 "22uF" H 4865 2305 50  0000 L CNN
+F 2 "" H 4788 2200 50  0001 C CNN
+F 3 "~" H 4750 2350 50  0001 C CNN
+	1    4750 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2500 4750 2600
+$Comp
+L Device:C C?
+U 1 1 60CDBFC0
+P 5200 2350
+F 0 "C?" H 5315 2396 50  0000 L CNN
+F 1 "0.10uF" H 5315 2305 50  0000 L CNN
+F 2 "" H 5238 2200 50  0001 C CNN
+F 3 "~" H 5200 2350 50  0001 C CNN
+	1    5200 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2500 5200 2600
+Wire Wire Line
+	3800 1300 3900 1300
+Wire Wire Line
+	3900 1300 3900 2000
+Connection ~ 3900 2000
+Wire Wire Line
+	3900 2000 4000 2000
+Wire Wire Line
+	3800 1200 4450 1200
+Wire Wire Line
+	4450 1200 4450 2000
+Connection ~ 4450 2000
+Wire Wire Line
+	4450 2000 4750 2000
+Wire Wire Line
+	3800 1100 4850 1100
+Wire Wire Line
+	4850 1100 4850 1350
+$Comp
+L power:GND #PWR?
+U 1 1 60CDF686
+P 4850 1350
+F 0 "#PWR?" H 4850 1100 50  0001 C CNN
+F 1 "GND" H 4855 1177 50  0000 C CNN
+F 2 "" H 4850 1350 50  0001 C CNN
+F 3 "" H 4850 1350 50  0001 C CNN
+	1    4850 1350
+	1    0    0    -1  
+$EndComp
 $Comp
 L Device:R_US R?
-U 1 1 60DBDAEE
-P 8600 2050
-F 0 "R?" H 8668 2096 50  0000 L CNN
-F 1 "182 k" H 8668 2005 50  0000 L CNN
-F 2 "" V 8640 2040 50  0001 C CNN
-F 3 "~" H 8600 2050 50  0001 C CNN
-	1    8600 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8600 2200 8600 2250
-$Comp
-L power:GND #PWR?
-U 1 1 60DBE28D
-P 8600 2250
-F 0 "#PWR?" H 8600 2000 50  0001 C CNN
-F 1 "GND" H 8605 2077 50  0000 C CNN
-F 2 "" H 8600 2250 50  0001 C CNN
-F 3 "" H 8600 2250 50  0001 C CNN
-	1    8600 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8300 1950 8300 2550
-Wire Wire Line
-	8300 2550 9500 2550
-Wire Wire Line
-	9500 2550 9500 2050
-Connection ~ 9500 1450
-Wire Wire Line
-	9500 1450 9900 1450
-$Comp
-L Device:R_US R?
-U 1 1 60DD22C7
-P 9500 1900
-F 0 "R?" H 9568 1946 50  0000 L CNN
-F 1 "100 k" H 9568 1855 50  0000 L CNN
-F 2 "" V 9540 1890 50  0001 C CNN
-F 3 "~" H 9500 1900 50  0001 C CNN
-	1    9500 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9500 1750 9500 1450
-Wire Wire Line
-	9900 1450 9900 2100
-Wire Wire Line
-	9900 2650 8150 2650
-Connection ~ 9900 1450
-Wire Wire Line
-	8150 2200 8150 2650
-Connection ~ 8150 2650
-$Comp
-L Device:C C?
-U 1 1 60DDF9B9
-P 9900 2250
-F 0 "C?" H 10015 2296 50  0000 L CNN
-F 1 "10 uF" H 10015 2205 50  0000 L CNN
-F 2 "" H 9938 2100 50  0001 C CNN
-F 3 "~" H 9900 2250 50  0001 C CNN
-	1    9900 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9900 2400 9900 2650
-Wire Wire Line
-	10400 1450 10400 2100
-Wire Wire Line
-	10400 2650 9900 2650
-Connection ~ 9900 2650
-$Comp
-L Device:C C?
-U 1 1 60DE694D
-P 10400 2250
-F 0 "C?" H 10515 2296 50  0000 L CNN
-F 1 "10 uF" H 10515 2205 50  0000 L CNN
-F 2 "" H 10438 2100 50  0001 C CNN
-F 3 "~" H 10400 2250 50  0001 C CNN
-	1    10400 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10400 2400 10400 2650
-Connection ~ 10400 1450
-Wire Wire Line
-	10400 1450 10550 1450
-Wire Wire Line
-	9900 1450 10400 1450
-Wire Wire Line
-	6850 1450 6700 1450
-Wire Wire Line
-	6850 1600 6700 1600
-Wire Wire Line
-	6700 1600 6700 1450
-Connection ~ 6700 1450
-Wire Wire Line
-	6700 1450 6200 1450
-Wire Wire Line
-	6850 1900 6700 1900
-Wire Wire Line
-	6700 1900 6700 1750
-Connection ~ 6700 1600
-Wire Wire Line
-	6850 1750 6700 1750
-Connection ~ 6700 1750
-Wire Wire Line
-	6700 1750 6700 1600
-Wire Wire Line
-	6850 2050 6450 2050
-Wire Wire Line
-	6450 2050 6450 2650
-Connection ~ 6450 2650
-Wire Wire Line
-	6450 2650 6200 2650
-Wire Wire Line
-	6450 2650 6700 2650
-Wire Wire Line
-	6700 2200 6700 2250
-Wire Wire Line
-	6700 2200 6850 2200
-Connection ~ 6700 2650
-Wire Wire Line
-	6700 2650 8150 2650
-$Comp
-L Device:C C?
-U 1 1 60E40FC9
-P 6700 2400
-F 0 "C?" H 6815 2446 50  0000 L CNN
-F 1 "4.7 nF" H 6815 2355 50  0000 L CNN
-F 2 "" H 6738 2250 50  0001 C CNN
-F 3 "~" H 6700 2400 50  0001 C CNN
-	1    6700 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6700 2550 6700 2650
-Connection ~ 6200 1450
-Wire Wire Line
-	6200 1450 6050 1450
-Wire Wire Line
-	6200 1450 6200 1750
-$Comp
-L Device:C C?
-U 1 1 60E52C0B
-P 6200 1900
-F 0 "C?" H 6315 1946 50  0000 L CNN
-F 1 "10 uF" H 6315 1855 50  0000 L CNN
-F 2 "" H 6238 1750 50  0001 C CNN
-F 3 "~" H 6200 1900 50  0001 C CNN
-	1    6200 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 2050 6200 2650
-Text GLabel 10550 1450 2    50   Output ~ 0
-VCC_3V8
-Text GLabel 6050 1450 0    50   Input ~ 0
-VCC_SYS
-$Comp
-L Buck_Boost_Converter:TPS63050YFFR IC?
-U 1 1 60E9159E
-P 7500 3850
-F 0 "IC?" H 7500 4515 50  0000 C CNN
-F 1 "TPS63050YFFR" H 7500 4424 50  0000 C CNN
-F 2 "BGA12C40P3X4_129X169X62" H 7050 3200 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps63050.pdf" H 7050 3100 50  0001 L CNN
-F 4 "TPS6305x Single Inductor Buck-Boost with 1-A Switches and Adjustable Soft Start" H 7050 3000 50  0001 L CNN "Description"
-F 5 "0.625" H 7050 2900 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 7050 2800 50  0001 L CNN "Manufacturer_Name"
-F 7 "TPS63050YFFR" H 7050 2700 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "595-TPS63050YFFR" H 7050 2600 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS63050YFFR/?qs=sU0fTKI0LumUuuIaDTttbQ%3D%3D" H 7050 2500 50  0001 L CNN "Mouser Price/Stock"
-F 10 "TPS63050YFFR" H 7050 2400 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/tps63050yffr/texas-instruments" H 7050 2300 50  0001 L CNN "Arrow Price/Stock"
-	1    7500 3850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6850 3500 6850 3050
-Wire Wire Line
-	6850 3050 7350 3050
-Wire Wire Line
-	8150 3050 8150 3500
-$Comp
-L Device:L L?
-U 1 1 60E915A7
-P 7500 3050
-F 0 "L?" V 7690 3050 50  0000 C CNN
-F 1 "1.5 uH" V 7599 3050 50  0000 C CNN
-F 2 "" H 7500 3050 50  0001 C CNN
-F 3 "~" H 7500 3050 50  0001 C CNN
-	1    7500 3050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7650 3050 8150 3050
-Wire Wire Line
-	8150 3650 8600 3650
-Wire Wire Line
-	8150 4150 8300 4150
-Wire Wire Line
-	8150 3900 8450 3900
-Wire Wire Line
-	8450 3900 8450 4050
-Wire Wire Line
-	8600 3650 8600 3700
-Connection ~ 8600 3650
-Wire Wire Line
-	8600 3650 9500 3650
-$Comp
-L Device:R_US R?
-U 1 1 60E915B5
-P 8600 3850
-F 0 "R?" H 8668 3896 50  0000 L CNN
-F 1 "562 k" H 8668 3805 50  0000 L CNN
-F 2 "" V 8640 3840 50  0001 C CNN
-F 3 "~" H 8600 3850 50  0001 C CNN
-	1    8600 3850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8600 4000 8600 4050
-Wire Wire Line
-	8450 4050 8600 4050
-Connection ~ 8600 4050
-Wire Wire Line
-	8600 4050 8600 4100
-$Comp
-L Device:R_US R?
-U 1 1 60E915BF
-P 8600 4250
-F 0 "R?" H 8668 4296 50  0000 L CNN
-F 1 "180 k" H 8668 4205 50  0000 L CNN
-F 2 "" V 8640 4240 50  0001 C CNN
-F 3 "~" H 8600 4250 50  0001 C CNN
-	1    8600 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8600 4400 8600 4450
-$Comp
-L power:GND #PWR?
-U 1 1 60E915C6
-P 8600 4450
-F 0 "#PWR?" H 8600 4200 50  0001 C CNN
-F 1 "GND" H 8605 4277 50  0000 C CNN
-F 2 "" H 8600 4450 50  0001 C CNN
-F 3 "" H 8600 4450 50  0001 C CNN
-	1    8600 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8300 4150 8300 4750
-Wire Wire Line
-	8300 4750 9500 4750
-Wire Wire Line
-	9500 4750 9500 4250
-Connection ~ 9500 3650
-Wire Wire Line
-	9500 3650 9900 3650
-$Comp
-L Device:R_US R?
-U 1 1 60E915D1
-P 9500 4100
-F 0 "R?" H 9568 4146 50  0000 L CNN
-F 1 "100 k" H 9568 4055 50  0000 L CNN
-F 2 "" V 9540 4090 50  0001 C CNN
-F 3 "~" H 9500 4100 50  0001 C CNN
-	1    9500 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9500 3950 9500 3650
-Wire Wire Line
-	9900 3650 9900 4300
-Wire Wire Line
-	9900 4850 8150 4850
-Connection ~ 9900 3650
-Wire Wire Line
-	8150 4400 8150 4850
-Connection ~ 8150 4850
-$Comp
-L Device:C C?
-U 1 1 60E915DD
-P 9900 4450
-F 0 "C?" H 10015 4496 50  0000 L CNN
-F 1 "10 uF" H 10015 4405 50  0000 L CNN
-F 2 "" H 9938 4300 50  0001 C CNN
-F 3 "~" H 9900 4450 50  0001 C CNN
-	1    9900 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9900 4600 9900 4850
-Wire Wire Line
-	10400 3650 10400 4300
-Wire Wire Line
-	10400 4850 9900 4850
-Connection ~ 9900 4850
-$Comp
-L Device:C C?
-U 1 1 60E915E7
-P 10400 4450
-F 0 "C?" H 10515 4496 50  0000 L CNN
-F 1 "10 uF" H 10515 4405 50  0000 L CNN
-F 2 "" H 10438 4300 50  0001 C CNN
-F 3 "~" H 10400 4450 50  0001 C CNN
-	1    10400 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10400 4600 10400 4850
-Connection ~ 10400 3650
-Wire Wire Line
-	10400 3650 10550 3650
-Wire Wire Line
-	9900 3650 10400 3650
-Wire Wire Line
-	6850 3650 6700 3650
-Wire Wire Line
-	6850 3800 6700 3800
-Wire Wire Line
-	6700 3800 6700 3650
-Connection ~ 6700 3650
-Wire Wire Line
-	6700 3650 6200 3650
-Wire Wire Line
-	6850 4100 6700 4100
-Wire Wire Line
-	6700 4100 6700 3950
-Connection ~ 6700 3800
-Wire Wire Line
-	6850 3950 6700 3950
-Connection ~ 6700 3950
-Wire Wire Line
-	6700 3950 6700 3800
-Wire Wire Line
-	6850 4250 6450 4250
-Wire Wire Line
-	6450 4250 6450 4850
-Connection ~ 6450 4850
-Wire Wire Line
-	6450 4850 6200 4850
-Wire Wire Line
-	6450 4850 6700 4850
-Wire Wire Line
-	6700 4400 6700 4450
-Wire Wire Line
-	6700 4400 6850 4400
-Connection ~ 6700 4850
-Wire Wire Line
-	6700 4850 8150 4850
-$Comp
-L Device:C C?
-U 1 1 60E91605
-P 6700 4600
-F 0 "C?" H 6815 4646 50  0000 L CNN
-F 1 "3.9 nF" H 6815 4555 50  0000 L CNN
-F 2 "" H 6738 4450 50  0001 C CNN
-F 3 "~" H 6700 4600 50  0001 C CNN
-	1    6700 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6700 4750 6700 4850
-Connection ~ 6200 3650
-Wire Wire Line
-	6200 3650 6050 3650
-Wire Wire Line
-	6200 3650 6200 3950
-$Comp
-L Device:C C?
-U 1 1 60E9160F
-P 6200 4100
-F 0 "C?" H 6315 4146 50  0000 L CNN
-F 1 "10 uF" H 6315 4055 50  0000 L CNN
-F 2 "" H 6238 3950 50  0001 C CNN
-F 3 "~" H 6200 4100 50  0001 C CNN
-	1    6200 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 4250 6200 4850
-Text GLabel 10550 3650 2    50   Output ~ 0
-VCC_3V3
-Text GLabel 6050 3650 0    50   Input ~ 0
-VCC_SYS
-Wire Wire Line
-	8600 1850 9100 1850
-Wire Wire Line
-	9100 1850 9100 1900
-$Comp
-L power:GND #PWR?
-U 1 1 60EAFD15
-P 9100 2250
-F 0 "#PWR?" H 9100 2000 50  0001 C CNN
-F 1 "GND" H 9105 2077 50  0000 C CNN
-F 2 "" H 9100 2250 50  0001 C CNN
-F 3 "" H 9100 2250 50  0001 C CNN
-	1    9100 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60EB02B4
-P 9100 2050
-F 0 "C?" H 9215 2096 50  0000 L CNN
-F 1 "10 pF" H 9215 2005 50  0000 L CNN
-F 2 "" H 9138 1900 50  0001 C CNN
-F 3 "~" H 9100 2050 50  0001 C CNN
-	1    9100 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 2200 9100 2250
-Wire Wire Line
-	8600 4050 9100 4050
-Wire Wire Line
-	9100 4050 9100 4100
-$Comp
-L power:GND #PWR?
-U 1 1 60EC7C55
-P 9100 4450
-F 0 "#PWR?" H 9100 4200 50  0001 C CNN
-F 1 "GND" H 9105 4277 50  0000 C CNN
-F 2 "" H 9100 4450 50  0001 C CNN
-F 3 "" H 9100 4450 50  0001 C CNN
-	1    9100 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60EC8212
-P 9100 4250
-F 0 "C?" H 9215 4296 50  0000 L CNN
-F 1 "10 pF" H 9215 4205 50  0000 L CNN
-F 2 "" H 9138 4100 50  0001 C CNN
-F 3 "~" H 9100 4250 50  0001 C CNN
-	1    9100 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 4400 9100 4450
-$Comp
-L Battery_Charger:MCP73811T-420I_OT IC?
-U 1 1 605ECCF2
-P 3300 2700
-F 0 "IC?" H 3300 3165 50  0000 C CNN
-F 1 "MCP73811T-420I_OT" H 3300 3074 50  0000 C CNN
-F 2 "SOT95P270X145-5N" H 2950 2300 50  0001 L CNN
-F 3 "http://docs-asia.electrocomponents.com/webdocs/0d2b/0900766b80d2b53c.pdf" H 2950 2200 50  0001 L CNN
-F 4 "Li-Ion Charge Controller 4.2V SOT23-5" H 2950 2100 50  0001 L CNN "Description"
-F 5 "1.45" H 2950 2000 50  0001 L CNN "Height"
-F 6 "Microchip" H 2950 1900 50  0001 L CNN "Manufacturer_Name"
-F 7 "MCP73811T-420I/OT" H 2950 1800 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "579-MCP73811T-420IOT" H 2950 1700 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP73811T-420I-OT?qs=tZia49mH7IL7zxmMwvtzFg%3D%3D" H 2950 1600 50  0001 L CNN "Mouser Price/Stock"
-F 10 "MCP73811T-420I/OT" H 2950 1500 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/mcp73811t-420iot/microchip-technology" H 2950 1400 50  0001 L CNN "Arrow Price/Stock"
-	1    3300 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 2500 2350 2500
-Wire Wire Line
-	2750 2900 2750 2500
-Connection ~ 2750 2500
-Wire Wire Line
-	3850 2700 3850 2900
-Wire Wire Line
-	3850 2900 3850 2950
-Connection ~ 3850 2900
-$Comp
-L power:GND #PWR?
-U 1 1 606159D6
-P 3850 2950
-F 0 "#PWR?" H 3850 2700 50  0001 C CNN
-F 1 "GND" H 3855 2777 50  0000 C CNN
-F 2 "" H 3850 2950 50  0001 C CNN
-F 3 "" H 3850 2950 50  0001 C CNN
-	1    3850 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6061EB51
-P 2350 2950
-F 0 "#PWR?" H 2350 2700 50  0001 C CNN
-F 1 "GND" H 2355 2777 50  0000 C CNN
-F 2 "" H 2350 2950 50  0001 C CNN
-F 3 "" H 2350 2950 50  0001 C CNN
-	1    2350 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2350 2500 2350 2550
-$Comp
-L Device:C C?
-U 1 1 60630B41
-P 2350 2700
-F 0 "C?" H 2465 2746 50  0000 L CNN
-F 1 "4.7uF" H 2465 2655 50  0000 L CNN
-F 2 "" H 2388 2550 50  0001 C CNN
-F 3 "~" H 2350 2700 50  0001 C CNN
-	1    2350 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2350 2850 2350 2950
-Wire Wire Line
-	3850 2500 4250 2500
-Wire Wire Line
-	4250 2500 4250 2550
-Connection ~ 4250 2500
-Wire Wire Line
-	4250 2500 4500 2500
-$Comp
-L power:GND #PWR?
-U 1 1 6064BC20
-P 4250 2950
-F 0 "#PWR?" H 4250 2700 50  0001 C CNN
-F 1 "GND" H 4255 2777 50  0000 C CNN
-F 2 "" H 4250 2950 50  0001 C CNN
-F 3 "" H 4250 2950 50  0001 C CNN
-	1    4250 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 6064C1AF
-P 4250 2700
-F 0 "C?" H 4365 2746 50  0000 L CNN
-F 1 "4.7uF" H 4365 2655 50  0000 L CNN
-F 2 "" H 4288 2550 50  0001 C CNN
-F 3 "~" H 4250 2700 50  0001 C CNN
-	1    4250 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 2850 4250 2950
-Text GLabel 4500 2500 2    50   Input ~ 0
-VCC_BAT
-$Comp
-L Fuel_Gage:BQ27426YZFR IC?
-U 1 1 606706BB
-P 3250 4800
-F 0 "IC?" H 3250 5265 50  0000 C CNN
-F 1 "BQ27426YZFR" H 3250 5174 50  0000 C CNN
-F 2 "BGA9C50P3X3_158X162X62" H 2900 3950 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/bq27426" H 2900 3850 50  0001 L CNN
-F 4 "Single cell System-Side Battery Fuel (Gas) Gauge w/Pre-programmed Chemistry Profile" H 2900 3750 50  0001 L CNN "Description"
-F 5 "0.625" H 2900 3650 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 2900 3550 50  0001 L CNN "Manufacturer_Name"
-F 7 "BQ27426YZFR" H 2900 3450 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "595-BQ27426YZFR" H 2900 3350 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/BQ27426YZFR/?qs=VymPLiRQZIRKngYKi%2FLE%252Bw%3D%3D" H 2900 3250 50  0001 L CNN "Mouser Price/Stock"
-F 10 "BQ27426YZFR" H 2900 3150 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/bq27426yzfr/texas-instruments" H 2900 3050 50  0001 L CNN "Arrow Price/Stock"
-	1    3250 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 5850 2250 5850
-Wire Wire Line
-	2700 4600 2650 4600
-Wire Wire Line
-	2650 4600 2650 5850
-Connection ~ 2650 5850
-Wire Wire Line
-	1700 5950 1700 6250
-Wire Wire Line
-	1700 6250 1700 6350
-Connection ~ 1700 6250
-Wire Wire Line
-	1700 6250 2250 6250
-$Comp
-L power:GND #PWR?
-U 1 1 606A1E59
-P 1700 6350
-F 0 "#PWR?" H 1700 6100 50  0001 C CNN
-F 1 "GND" H 1705 6177 50  0000 C CNN
-F 2 "" H 1700 6350 50  0001 C CNN
-F 3 "" H 1700 6350 50  0001 C CNN
-	1    1700 6350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 5850 2250 5900
-Connection ~ 2250 5850
-Wire Wire Line
-	2250 5850 2650 5850
-Wire Wire Line
-	2250 6200 2250 6250
-$Comp
-L Device:C C?
-U 1 1 606A9B3A
-P 2250 6050
-F 0 "C?" H 2365 6096 50  0000 L CNN
-F 1 "1uF" H 2365 6005 50  0000 L CNN
-F 2 "" H 2288 5900 50  0001 C CNN
-F 3 "~" H 2250 6050 50  0001 C CNN
-	1    2250 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3800 5400 3900 5400
-Wire Wire Line
-	3900 5400 3900 5550
-$Comp
-L power:GND #PWR?
-U 1 1 606BA6AB
-P 3900 5550
-F 0 "#PWR?" H 3900 5300 50  0001 C CNN
-F 1 "GND" H 3905 5377 50  0000 C CNN
-F 2 "" H 3900 5550 50  0001 C CNN
-F 3 "" H 3900 5550 50  0001 C CNN
-	1    3900 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 5850 4100 5850
-Wire Wire Line
-	3800 4950 4100 4950
-Wire Wire Line
-	4100 4950 4100 5850
-Connection ~ 4100 5850
-Wire Wire Line
-	4100 5850 4150 5850
-Wire Wire Line
-	3800 4850 4500 4850
-Wire Wire Line
-	4500 4850 4500 5850
-Connection ~ 4500 5850
-$Comp
-L Device:R_US R?
-U 1 1 606D4108
-P 4300 5850
-F 0 "R?" V 4095 5850 50  0000 C CNN
-F 1 "0.01" V 4186 5850 50  0000 C CNN
-F 2 "" V 4340 5840 50  0001 C CNN
-F 3 "~" H 4300 5850 50  0001 C CNN
-	1    4300 5850
+U 1 1 60CDF922
+P 4150 2000
+F 0 "R?" V 3945 2000 50  0000 C CNN
+F 1 "0.1" V 4036 2000 50  0000 C CNN
+F 2 "" V 4190 1990 50  0001 C CNN
+F 3 "~" H 4150 2000 50  0001 C CNN
+	1    4150 2000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4450 5850 4500 5850
-Wire Wire Line
-	1750 4850 1750 4750
-Wire Wire Line
-	1750 4850 1550 4850
+	4300 2000 4450 2000
 $Comp
-L Device:R_US R?
-U 1 1 60701AFD
-P 1750 4600
-F 0 "R?" H 1818 4646 50  0000 L CNN
-F 1 "10k" H 1818 4555 50  0000 L CNN
-F 2 "" V 1790 4590 50  0001 C CNN
-F 3 "~" H 1750 4600 50  0001 C CNN
-	1    1750 4600
+L Switch:SW_Push SW?
+U 1 1 60CE0377
+P 9400 2300
+F 0 "SW?" H 9400 2585 50  0000 C CNN
+F 1 "SW_Push" H 9400 2494 50  0000 C CNN
+F 2 "" H 9400 2500 50  0001 C CNN
+F 3 "~" H 9400 2500 50  0001 C CNN
+	1    9400 2300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6070B983
-P 2050 4600
-F 0 "R?" H 2118 4646 50  0000 L CNN
-F 1 "10k" H 2118 4555 50  0000 L CNN
-F 2 "" V 2090 4590 50  0001 C CNN
-F 3 "~" H 2050 4600 50  0001 C CNN
-	1    2050 4600
-	1    0    0    -1  
-$EndComp
-Text GLabel 1550 4850 0    50   BiDi ~ 0
-SDA
-Text GLabel 1350 4950 0    50   BiDi ~ 0
-SCL
-Connection ~ 1750 4850
 Wire Wire Line
-	1350 4950 2050 4950
+	6250 3100 5450 3100
+Text HLabel 5450 3100 0    50   Output ~ 0
+RESET
 Wire Wire Line
-	1750 4850 2700 4850
+	9200 2300 9100 2300
+Text HLabel 8750 2300 0    50   Input ~ 0
+RESET
 Wire Wire Line
-	2050 4950 2050 4750
-Connection ~ 2050 4950
+	9100 2300 9100 2400
+Connection ~ 9100 2300
 Wire Wire Line
-	2050 4950 2700 4950
-Wire Wire Line
-	2050 4300 1750 4300
-Wire Wire Line
-	2050 4300 2050 4450
-Wire Wire Line
-	1750 4300 1750 4450
-Connection ~ 1750 4300
-Wire Wire Line
-	1750 4300 1500 4300
-Text GLabel 1500 4300 0    50   Input ~ 0
-VCC_3V3
-Wire Wire Line
-	3800 4600 4800 4600
-Wire Wire Line
-	4800 4600 4800 4650
+	9100 2300 8750 2300
 $Comp
 L Device:C C?
-U 1 1 6078133A
-P 4800 4800
-F 0 "C?" H 4915 4846 50  0000 L CNN
-F 1 "2.2uF" H 4915 4755 50  0000 L CNN
-F 2 "" H 4838 4650 50  0001 C CNN
-F 3 "~" H 4800 4800 50  0001 C CNN
-	1    4800 4800
+U 1 1 60CE3F0A
+P 9100 2550
+F 0 "C?" H 9215 2596 50  0000 L CNN
+F 1 "0.01uF" H 9215 2505 50  0000 L CNN
+F 2 "" H 9138 2400 50  0001 C CNN
+F 3 "~" H 9100 2550 50  0001 C CNN
+	1    9100 2550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9100 2700 9100 2850
 $Comp
 L power:GND #PWR?
-U 1 1 607818E8
-P 4800 4950
-F 0 "#PWR?" H 4800 4700 50  0001 C CNN
-F 1 "GND" H 4805 4777 50  0000 C CNN
-F 2 "" H 4800 4950 50  0001 C CNN
-F 3 "" H 4800 4950 50  0001 C CNN
-	1    4800 4950
+U 1 1 60CE4424
+P 9100 2850
+F 0 "#PWR?" H 9100 2600 50  0001 C CNN
+F 1 "GND" H 9105 2677 50  0000 C CNN
+F 2 "" H 9100 2850 50  0001 C CNN
+F 3 "" H 9100 2850 50  0001 C CNN
+	1    9100 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 5400 2450 5400
+	9600 2300 9850 2300
 Wire Wire Line
-	2000 5400 2000 5550
+	9850 2300 9850 2850
 $Comp
 L power:GND #PWR?
-U 1 1 607E0237
-P 2000 5550
-F 0 "#PWR?" H 2000 5300 50  0001 C CNN
-F 1 "GND" H 2005 5377 50  0000 C CNN
-F 2 "" H 2000 5550 50  0001 C CNN
-F 3 "" H 2000 5550 50  0001 C CNN
-	1    2000 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 607E07D8
-P 2300 5400
-F 0 "R?" V 2095 5400 50  0000 C CNN
-F 1 "10k" V 2186 5400 50  0000 C CNN
-F 2 "" V 2340 5390 50  0001 C CNN
-F 3 "~" H 2300 5400 50  0001 C CNN
-	1    2300 5400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2150 5400 2000 5400
-Wire Wire Line
-	2700 5100 2350 5100
-Text GLabel 1550 5100 0    50   Output ~ 0
-GPOUT
-Wire Wire Line
-	2350 5100 2350 4750
-Wire Wire Line
-	2350 4300 2050 4300
-Connection ~ 2350 5100
-Wire Wire Line
-	2350 5100 1550 5100
-Connection ~ 2050 4300
-$Comp
-L Device:R_US R?
-U 1 1 608189A4
-P 2350 4600
-F 0 "R?" H 2418 4646 50  0000 L CNN
-F 1 "10k" H 2418 4555 50  0000 L CNN
-F 2 "" V 2390 4590 50  0001 C CNN
-F 3 "~" H 2350 4600 50  0001 C CNN
-	1    2350 4600
+U 1 1 60CE59B3
+P 9850 2850
+F 0 "#PWR?" H 9850 2600 50  0001 C CNN
+F 1 "GND" H 9855 2677 50  0000 C CNN
+F 2 "" H 9850 2850 50  0001 C CNN
+F 3 "" H 9850 2850 50  0001 C CNN
+	1    9850 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2350 4450 2350 4300
+	3600 2000 3600 2200
+Connection ~ 3600 2000
+Wire Wire Line
+	3600 2000 3900 2000
 $Comp
 L power:GND #PWR?
-U 1 1 60877465
-P 8150 2650
-F 0 "#PWR?" H 8150 2400 50  0001 C CNN
-F 1 "GND" H 8155 2477 50  0000 C CNN
-F 2 "" H 8150 2650 50  0001 C CNN
-F 3 "" H 8150 2650 50  0001 C CNN
-	1    8150 2650
+U 1 1 60CE9982
+P 3600 2600
+F 0 "#PWR?" H 3600 2350 50  0001 C CNN
+F 1 "GND" H 3605 2427 50  0000 C CNN
+F 2 "" H 3600 2600 50  0001 C CNN
+F 3 "" H 3600 2600 50  0001 C CNN
+	1    3600 2600
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60877A14
-P 8150 4850
-F 0 "#PWR?" H 8150 4600 50  0001 C CNN
-F 1 "GND" H 8155 4677 50  0000 C CNN
-F 2 "" H 8150 4850 50  0001 C CNN
-F 3 "" H 8150 4850 50  0001 C CNN
-	1    8150 4850
-	1    0    0    -1  
-$EndComp
-Text GLabel 4750 5850 2    50   Output ~ 0
-VCC_BAT
-Connection ~ 2350 2500
-Wire Wire Line
-	4500 5850 4750 5850
-Text GLabel 1400 1450 0    50   Input ~ 0
-VCC_BAT
-Wire Wire Line
-	6400 5550 6800 5550
-Wire Wire Line
-	2050 2000 2450 2000
-Wire Wire Line
-	2450 2000 2450 1900
-Text GLabel 4500 1450 2    50   Output ~ 0
-VCC_SYS
-$Comp
-L Device:D_Schottky D?
-U 1 1 609AE0EE
-P 2450 1750
-F 0 "D?" V 2404 1830 50  0000 L CNN
-F 1 "D_Schottky" V 2495 1830 50  0000 L CNN
-F 2 "" H 2450 1750 50  0001 C CNN
-F 3 "~" H 2450 1750 50  0001 C CNN
-	1    2450 1750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2450 1600 2450 1450
-Wire Wire Line
-	2450 1450 4300 1450
-Connection ~ 4300 1450
-Wire Wire Line
-	4300 1450 4500 1450
-Connection ~ 1750 2500
-Wire Wire Line
-	1750 2500 2050 2500
-Wire Wire Line
-	1400 2500 1750 2500
-Connection ~ 2050 2500
-Wire Wire Line
-	2050 2500 2350 2500
-$Comp
-L power:GND #PWR?
-U 1 1 609CDAD3
-P 4300 1900
-F 0 "#PWR?" H 4300 1650 50  0001 C CNN
-F 1 "GND" H 4305 1727 50  0000 C CNN
-F 2 "" H 4300 1900 50  0001 C CNN
-F 3 "" H 4300 1900 50  0001 C CNN
-	1    4300 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 1450 4300 1600
 $Comp
 L Device:C C?
-U 1 1 609CE0E9
-P 4300 1750
-F 0 "C?" H 4415 1796 50  0000 L CNN
-F 1 "1uF" H 4415 1705 50  0000 L CNN
-F 2 "" H 4338 1600 50  0001 C CNN
-F 3 "~" H 4300 1750 50  0001 C CNN
-	1    4300 1750
+U 1 1 60CEF938
+P 3600 2350
+F 0 "C?" H 3715 2396 50  0000 L CNN
+F 1 "0.10uF" H 3715 2305 50  0000 L CNN
+F 2 "" H 3638 2200 50  0001 C CNN
+F 3 "~" H 3600 2350 50  0001 C CNN
+	1    3600 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2050 2000 2050 2500
-Wire Wire Line
-	2250 1450 2450 1450
-Connection ~ 2450 1450
-Wire Wire Line
-	2050 1750 2050 2000
-Connection ~ 2050 2000
-Wire Wire Line
-	1850 1450 1400 1450
+	3600 2500 3600 2600
 $Comp
-L Device:Q_PMOS_DSG Q?
-U 1 1 60B66215
-P 2050 1550
-F 0 "Q?" V 2392 1550 50  0000 C CNN
-F 1 "Q_PMOS_DSG" V 2301 1550 50  0000 C CNN
-F 2 "" H 2250 1650 50  0001 C CNN
-F 3 "~" H 2050 1550 50  0001 C CNN
-	1    2050 1550
+L Connector_Generic:Conn_01x02 J?
+U 1 1 60CF262B
+P 4000 2800
+F 0 "J?" V 3964 2612 50  0000 R CNN
+F 1 "Conn_01x02" V 3873 2612 50  0000 R CNN
+F 2 "" H 4000 2800 50  0001 C CNN
+F 3 "~" H 4000 2800 50  0001 C CNN
+	1    4000 2800
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	2600 2300 2800 2300
+Wire Wire Line
+	2800 2300 2800 3300
+Wire Wire Line
+	2800 3300 3800 3300
+$Comp
+L Device:R_US R?
+U 1 1 60CF5D63
+P 4050 3300
+F 0 "R?" V 3845 3300 50  0000 C CNN
+F 1 "R_US" V 3936 3300 50  0000 C CNN
+F 2 "" V 4090 3290 50  0001 C CNN
+F 3 "~" H 4050 3300 50  0001 C CNN
+	1    4050 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 3300 4300 3300
+Wire Wire Line
+	4000 3000 3800 3000
+Wire Wire Line
+	3800 3000 3800 3300
+Connection ~ 3800 3300
+Wire Wire Line
+	3800 3300 3900 3300
+Wire Wire Line
+	4100 3000 4300 3000
+Wire Wire Line
+	4300 3000 4300 3300
+Connection ~ 4300 3300
+Wire Wire Line
+	4300 3300 6250 3300
 $EndSCHEMATC
