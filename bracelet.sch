@@ -14,30 +14,16 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1050 1800 1550 700 
+S 1050 1800 1500 2650
 U 60BA4931
 F0 "battery_management" 50
 F1 "battery_management.sch" 50
-F2 "VCC_3V3" O R 2600 2300 50 
-F3 "VCC_POWER" O R 2600 2000 50 
+F2 "VCC_3V3" O R 2550 2300 50 
+F3 "VCC_POWER" O R 2550 2000 50 
+F4 "GPOUT" O R 2550 3650 50 
+F5 "SDA" B R 2550 3850 50 
+F6 "SCL" I R 2550 4050 50 
 $EndSheet
-$Comp
-L Connector_60PIN:55560-0607 J?
-U 1 1 60CCE92F
-P 6700 2200
-F 0 "J?" H 6700 2365 50  0000 C CNN
-F 1 "55560-0607" H 6700 2274 50  0000 C CNN
-F 2 "555600607" H 6450 -1050 50  0001 L CNN
-F 3 "https://www.molex.com/pdm_docs/sd/555600607_sd.pdf" H 6450 -1150 50  0001 L CNN
-F 4 "Molex SLIMSTACK 55560, 0.5mm Pitch, 60 Way, 2 Row, Straight PCB Header, Surface Mount" H 6450 -1250 50  0001 L CNN "Description"
-F 5 "1.35" H 6450 -1350 50  0001 L CNN "Height"
-F 6 "Molex" H 6450 -1450 50  0001 L CNN "Manufacturer_Name"
-F 7 "55560-0607" H 6450 -1550 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "538-55560-0607" H 6450 -1650 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Molex/55560-0607/?qs=f2bKcALV%252B9xylowEXhTzRw%3D%3D" H 6450 -1750 50  0001 L CNN "Mouser Price/Stock"
-	1    6700 2200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6250 2700 6000 2700
 Wire Wire Line
@@ -49,19 +35,7 @@ Wire Wire Line
 Wire Wire Line
 	6250 3500 6000 3500
 Wire Wire Line
-	6250 3600 6000 3600
-Wire Wire Line
-	6250 4100 6000 4100
-Wire Wire Line
 	6250 5200 6000 5200
-Wire Wire Line
-	7150 2300 7400 2300
-Wire Wire Line
-	7150 3600 7400 3600
-Wire Wire Line
-	7150 4300 7400 4300
-Wire Wire Line
-	7150 5200 7400 5200
 Wire Wire Line
 	6000 2700 6000 2800
 Connection ~ 6000 2800
@@ -76,10 +50,6 @@ Wire Wire Line
 Connection ~ 6000 3500
 Wire Wire Line
 	6000 3500 6000 3600
-Connection ~ 6000 3600
-Wire Wire Line
-	6000 3600 6000 4100
-Connection ~ 6000 4100
 Wire Wire Line
 	6000 4100 6000 5200
 Connection ~ 6000 5200
@@ -87,10 +57,6 @@ Wire Wire Line
 	6000 5200 6000 5600
 Wire Wire Line
 	7400 2300 7400 3600
-Connection ~ 7400 3600
-Wire Wire Line
-	7400 3600 7400 4300
-Connection ~ 7400 4300
 Wire Wire Line
 	7400 4300 7400 5200
 Connection ~ 7400 5200
@@ -119,10 +85,10 @@ F 3 "" H 7400 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J?
+L Connector_Generic:Conn_01x03 J4
 U 1 1 60CD2EAD
 P 3600 1200
-F 0 "J?" H 3518 875 50  0000 C CNN
+F 0 "J4" H 3518 875 50  0000 C CNN
 F 1 "Conn_01x03" H 3518 966 50  0000 C CNN
 F 2 "" H 3600 1200 50  0001 C CNN
 F 3 "~" H 3600 1200 50  0001 C CNN
@@ -167,8 +133,6 @@ Connection ~ 5650 2000
 Wire Wire Line
 	5650 2000 6000 2000
 Wire Wire Line
-	2600 2000 3600 2000
-Wire Wire Line
 	6250 3200 5650 3200
 Wire Wire Line
 	5200 2000 5200 2200
@@ -182,17 +146,6 @@ Wire Wire Line
 	4750 2000 5200 2000
 $Comp
 L power:GND #PWR?
-U 1 1 60CDB770
-P 5200 2600
-F 0 "#PWR?" H 5200 2350 50  0001 C CNN
-F 1 "GND" H 5205 2427 50  0000 C CNN
-F 2 "" H 5200 2600 50  0001 C CNN
-F 3 "" H 5200 2600 50  0001 C CNN
-	1    5200 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
 U 1 1 60CDB9A5
 P 4750 2600
 F 0 "#PWR?" H 4750 2350 50  0001 C CNN
@@ -203,10 +156,10 @@ F 3 "" H 4750 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C2
 U 1 1 60CDBC11
 P 4750 2350
-F 0 "C?" H 4865 2396 50  0000 L CNN
+F 0 "C2" H 4865 2396 50  0000 L CNN
 F 1 "22uF" H 4865 2305 50  0000 L CNN
 F 2 "" H 4788 2200 50  0001 C CNN
 F 3 "~" H 4750 2350 50  0001 C CNN
@@ -215,19 +168,6 @@ F 3 "~" H 4750 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4750 2500 4750 2600
-$Comp
-L Device:C C?
-U 1 1 60CDBFC0
-P 5200 2350
-F 0 "C?" H 5315 2396 50  0000 L CNN
-F 1 "0.10uF" H 5315 2305 50  0000 L CNN
-F 2 "" H 5238 2200 50  0001 C CNN
-F 3 "~" H 5200 2350 50  0001 C CNN
-	1    5200 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 2500 5200 2600
 Wire Wire Line
 	3800 1300 3900 1300
 Wire Wire Line
@@ -271,66 +211,62 @@ $EndComp
 Wire Wire Line
 	4300 2000 4450 2000
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW1
 U 1 1 60CE0377
-P 9400 2300
-F 0 "SW?" H 9400 2585 50  0000 C CNN
-F 1 "SW_Push" H 9400 2494 50  0000 C CNN
-F 2 "" H 9400 2500 50  0001 C CNN
-F 3 "~" H 9400 2500 50  0001 C CNN
-	1    9400 2300
+P 9800 1400
+F 0 "SW1" H 9800 1685 50  0000 C CNN
+F 1 "SW_Push" H 9800 1594 50  0000 C CNN
+F 2 "" H 9800 1600 50  0001 C CNN
+F 3 "~" H 9800 1600 50  0001 C CNN
+	1    9800 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 3100 5450 3100
-Text HLabel 5450 3100 0    50   Output ~ 0
+	9600 1400 9500 1400
+Text HLabel 9150 1400 0    50   Input ~ 0
 RESET
 Wire Wire Line
-	9200 2300 9100 2300
-Text HLabel 8750 2300 0    50   Input ~ 0
-RESET
+	9500 1400 9500 1500
+Connection ~ 9500 1400
 Wire Wire Line
-	9100 2300 9100 2400
-Connection ~ 9100 2300
-Wire Wire Line
-	9100 2300 8750 2300
+	9500 1400 9150 1400
 $Comp
 L Device:C C?
 U 1 1 60CE3F0A
-P 9100 2550
-F 0 "C?" H 9215 2596 50  0000 L CNN
-F 1 "0.01uF" H 9215 2505 50  0000 L CNN
-F 2 "" H 9138 2400 50  0001 C CNN
-F 3 "~" H 9100 2550 50  0001 C CNN
-	1    9100 2550
+P 9500 1650
+F 0 "C?" H 9615 1696 50  0000 L CNN
+F 1 "0.01uF" H 9615 1605 50  0000 L CNN
+F 2 "" H 9538 1500 50  0001 C CNN
+F 3 "~" H 9500 1650 50  0001 C CNN
+	1    9500 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9100 2700 9100 2850
+	9500 1800 9500 1950
 $Comp
 L power:GND #PWR?
 U 1 1 60CE4424
-P 9100 2850
-F 0 "#PWR?" H 9100 2600 50  0001 C CNN
-F 1 "GND" H 9105 2677 50  0000 C CNN
-F 2 "" H 9100 2850 50  0001 C CNN
-F 3 "" H 9100 2850 50  0001 C CNN
-	1    9100 2850
+P 9500 1950
+F 0 "#PWR?" H 9500 1700 50  0001 C CNN
+F 1 "GND" H 9505 1777 50  0000 C CNN
+F 2 "" H 9500 1950 50  0001 C CNN
+F 3 "" H 9500 1950 50  0001 C CNN
+	1    9500 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9600 2300 9850 2300
+	10000 1400 10250 1400
 Wire Wire Line
-	9850 2300 9850 2850
+	10250 1400 10250 1950
 $Comp
 L power:GND #PWR?
 U 1 1 60CE59B3
-P 9850 2850
-F 0 "#PWR?" H 9850 2600 50  0001 C CNN
-F 1 "GND" H 9855 2677 50  0000 C CNN
-F 2 "" H 9850 2850 50  0001 C CNN
-F 3 "" H 9850 2850 50  0001 C CNN
-	1    9850 2850
+P 10250 1950
+F 0 "#PWR?" H 10250 1700 50  0001 C CNN
+F 1 "GND" H 10255 1777 50  0000 C CNN
+F 2 "" H 10250 1950 50  0001 C CNN
+F 3 "" H 10250 1950 50  0001 C CNN
+	1    10250 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -350,10 +286,10 @@ F 3 "" H 3600 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C3
 U 1 1 60CEF938
 P 3600 2350
-F 0 "C?" H 3715 2396 50  0000 L CNN
+F 0 "C3" H 3715 2396 50  0000 L CNN
 F 1 "0.10uF" H 3715 2305 50  0000 L CNN
 F 2 "" H 3638 2200 50  0001 C CNN
 F 3 "~" H 3600 2350 50  0001 C CNN
@@ -363,18 +299,16 @@ $EndComp
 Wire Wire Line
 	3600 2500 3600 2600
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J5
 U 1 1 60CF262B
 P 4000 2800
-F 0 "J?" V 3964 2612 50  0000 R CNN
+F 0 "J5" V 3964 2612 50  0000 R CNN
 F 1 "Conn_01x02" V 3873 2612 50  0000 R CNN
 F 2 "" H 4000 2800 50  0001 C CNN
 F 3 "~" H 4000 2800 50  0001 C CNN
 	1    4000 2800
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2600 2300 2800 2300
 Wire Wire Line
 	2800 2300 2800 3300
 Wire Wire Line
@@ -403,7 +337,249 @@ Wire Wire Line
 	4100 3000 4300 3000
 Wire Wire Line
 	4300 3000 4300 3300
+Text HLabel 7700 3800 2    50   Output ~ 0
+IO31_BM_SCL
+Text HLabel 7700 3700 2    50   BiDi ~ 0
+IO30_BM_SDA
+Wire Wire Line
+	2550 3850 2850 3850
+Wire Wire Line
+	2550 4050 2850 4050
+Text HLabel 2850 4050 2    50   Input ~ 0
+BM_SCL
+Text HLabel 2850 3850 2    50   BiDi ~ 0
+BM_SDA
+Text HLabel 7700 3400 2    50   Input ~ 0
+IO12_BM_GPOUT
+Wire Wire Line
+	2550 3650 2850 3650
+Text HLabel 2850 3650 2    50   Output ~ 0
+BM_GPOUT
+Wire Wire Line
+	2550 2300 2800 2300
+Wire Wire Line
+	2550 2000 3600 2000
+Text HLabel 7700 2700 2    50   Input ~ 0
+IO5_DFU
 Connection ~ 4300 3300
 Wire Wire Line
 	4300 3300 6250 3300
+Text HLabel 5450 3100 0    50   Output ~ 0
+RESET
+Wire Wire Line
+	6250 3100 5450 3100
+Wire Wire Line
+	5200 2500 5200 2600
+$Comp
+L Device:C C1
+U 1 1 60CDBFC0
+P 5200 2350
+F 0 "C1" H 5315 2396 50  0000 L CNN
+F 1 "0.10uF" H 5315 2305 50  0000 L CNN
+F 2 "" H 5238 2200 50  0001 C CNN
+F 3 "~" H 5200 2350 50  0001 C CNN
+	1    5200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60CDB770
+P 5200 2600
+F 0 "#PWR?" H 5200 2350 50  0001 C CNN
+F 1 "GND" H 5205 2427 50  0000 C CNN
+F 2 "" H 5200 2600 50  0001 C CNN
+F 3 "" H 5200 2600 50  0001 C CNN
+	1    5200 2600
+	1    0    0    -1  
+$EndComp
+Text HLabel 7700 4400 2    50   Input ~ 0
+IO0_UART1_RX
+Text HLabel 7700 4500 2    50   Output ~ 0
+IO1_UART1_TX
+Text HLabel 7700 4600 2    50   Output ~ 0
+IO14_UART1_RTS
+Text HLabel 7700 4700 2    50   Input ~ 0
+IO15_UART1_CTS
+Wire Wire Line
+	6250 5000 5700 5000
+Wire Wire Line
+	6250 5100 5700 5100
+Text HLabel 5700 5100 0    50   Input ~ 0
+SWDCLK
+Text HLabel 5700 5000 0    50   BiDi ~ 0
+SWDIO
+Text HLabel 7700 4800 2    50   Input ~ 0
+IO28_UART0_RX
+Text HLabel 7700 4900 2    50   Output ~ 0
+IO29_UART0_TX
+Text HLabel 7700 5000 2    50   Output ~ 0
+IO27_UART0_RTS
+Text HLabel 7700 5100 2    50   Input ~ 0
+IO26_UART0_CTS
+Connection ~ 7400 4300
+Connection ~ 7400 3600
+Connection ~ 6000 4100
+Connection ~ 6000 3600
+Wire Wire Line
+	7150 5200 7400 5200
+Wire Wire Line
+	7150 5100 7700 5100
+Wire Wire Line
+	7150 5000 7700 5000
+Wire Wire Line
+	7150 4900 7700 4900
+Wire Wire Line
+	7150 4800 7700 4800
+Wire Wire Line
+	7150 4700 7700 4700
+Wire Wire Line
+	7150 4600 7700 4600
+Wire Wire Line
+	7150 4500 7700 4500
+Wire Wire Line
+	7150 4400 7700 4400
+Wire Wire Line
+	7150 4300 7400 4300
+Wire Wire Line
+	7150 3800 7700 3800
+Wire Wire Line
+	7150 3700 7700 3700
+Wire Wire Line
+	7150 3600 7400 3600
+Wire Wire Line
+	7150 3400 7700 3400
+Wire Wire Line
+	7150 2700 7700 2700
+Wire Wire Line
+	7150 2300 7400 2300
+Wire Wire Line
+	6250 4100 6000 4100
+Wire Wire Line
+	6250 3600 6000 3600
+Wire Wire Line
+	7400 3600 7400 4300
+Wire Wire Line
+	6000 3600 6000 4100
+$Comp
+L Connector_60PIN:55560-0607 J1
+U 1 1 60CCE92F
+P 6700 2200
+F 0 "J1" H 6700 2365 50  0000 C CNN
+F 1 "55560-0607" H 6700 2274 50  0000 C CNN
+F 2 "555600607" H 6450 -1050 50  0001 L CNN
+F 3 "https://www.molex.com/pdm_docs/sd/555600607_sd.pdf" H 6450 -1150 50  0001 L CNN
+F 4 "Molex SLIMSTACK 55560, 0.5mm Pitch, 60 Way, 2 Row, Straight PCB Header, Surface Mount" H 6450 -1250 50  0001 L CNN "Description"
+F 5 "1.35" H 6450 -1350 50  0001 L CNN "Height"
+F 6 "Molex" H 6450 -1450 50  0001 L CNN "Manufacturer_Name"
+F 7 "55560-0607" H 6450 -1550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "538-55560-0607" H 6450 -1650 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Molex/55560-0607/?qs=f2bKcALV%252B9xylowEXhTzRw%3D%3D" H 6450 -1750 50  0001 L CNN "Mouser Price/Stock"
+	1    6700 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 60D35A42
+P 10350 4700
+F 0 "J2" H 10430 4692 50  0000 L CNN
+F 1 "Conn_01x08" H 10430 4601 50  0000 L CNN
+F 2 "" H 10350 4700 50  0001 C CNN
+F 3 "~" H 10350 4700 50  0001 C CNN
+	1    10350 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 4400 9950 4400
+Wire Wire Line
+	10150 4500 9950 4500
+Wire Wire Line
+	10150 4600 9950 4600
+Wire Wire Line
+	10150 4700 9950 4700
+Wire Wire Line
+	10150 4800 9950 4800
+Wire Wire Line
+	10150 4900 9950 4900
+Wire Wire Line
+	10150 5000 9950 5000
+Wire Wire Line
+	10150 5100 9950 5100
+Text HLabel 9950 4400 0    50   Output ~ 0
+IO0_UART1_RX
+Text HLabel 9950 4500 0    50   Input ~ 0
+IO1_UART1_TX
+Text HLabel 9950 4600 0    50   Input ~ 0
+IO14_UART1_RTS
+Text HLabel 9950 4700 0    50   Output ~ 0
+IO15_UART1_CTS
+Text HLabel 9950 4800 0    50   Output ~ 0
+IO28_UART0_RX
+Text HLabel 9950 4900 0    50   Input ~ 0
+IO29_UART0_TX
+Text HLabel 9950 5000 0    50   Input ~ 0
+IO27_UART0_RTS
+Text HLabel 9950 5100 0    50   Output ~ 0
+IO26_UART0_CTS
+$Comp
+L Connector_Generic:Conn_01x06 J3
+U 1 1 60D5A76D
+P 10350 3300
+F 0 "J3" H 10430 3292 50  0000 L CNN
+F 1 "Conn_01x06" H 10430 3201 50  0000 L CNN
+F 2 "" H 10350 3300 50  0001 C CNN
+F 3 "~" H 10350 3300 50  0001 C CNN
+	1    10350 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 3100 9900 3100
+Wire Wire Line
+	10150 3200 9900 3200
+Wire Wire Line
+	10150 3300 9900 3300
+Wire Wire Line
+	10150 3400 9900 3400
+Wire Wire Line
+	10150 3500 9900 3500
+Wire Wire Line
+	10150 3600 9900 3600
+Text HLabel 9900 3100 0    50   Input ~ 0
+IO12_BM_GPOUT
+Text HLabel 9900 3200 0    50   Input ~ 0
+IO30_BM_SDA
+Text HLabel 9900 3300 0    50   Input ~ 0
+IO31_BM_SCL
+Text HLabel 9900 3400 0    50   Output ~ 0
+IO5_DFU
+Text HLabel 9900 3500 0    50   BiDi ~ 0
+SWDIO
+Text HLabel 9900 3600 0    50   Output ~ 0
+SWDCLK
+NoConn ~ 7150 2400
+NoConn ~ 7150 2500
+NoConn ~ 7150 2600
+NoConn ~ 7150 2800
+NoConn ~ 7150 2900
+NoConn ~ 7150 3000
+NoConn ~ 7150 3100
+NoConn ~ 7150 3200
+NoConn ~ 7150 3300
+NoConn ~ 7150 3500
+NoConn ~ 7150 3900
+NoConn ~ 7150 4000
+NoConn ~ 7150 4100
+NoConn ~ 7150 4200
+NoConn ~ 6250 3400
+NoConn ~ 6250 3700
+NoConn ~ 6250 3800
+NoConn ~ 6250 3900
+NoConn ~ 6250 4000
+NoConn ~ 6250 4200
+NoConn ~ 6250 4300
+NoConn ~ 6250 4400
+NoConn ~ 6250 4500
+NoConn ~ 6250 4600
+NoConn ~ 6250 4700
+NoConn ~ 6250 4800
+NoConn ~ 6250 4900
 $EndSCHEMATC
