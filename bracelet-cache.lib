@@ -288,49 +288,6 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_D_Schottky
-#
-DEF Device_D_Schottky D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Device_D_Schottky" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
-P 6 0 1 10 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_FerriteBead
-#
-DEF Device_FerriteBead FB 0 0 N Y 1 F N
-F0 "FB" -150 25 50 V V C CNN
-F1 "Device_FerriteBead" 150 0 50 V V C CNN
-F2 "" -70 0 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Inductor_*
- L_*
- *Ferrite*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 0 -50 0 -48 N
-P 2 0 1 0 0 50 0 51 N
-P 5 0 1 0 -109 16 -67 89 109 -12 66 -85 -109 16 N
-X ~ 1 0 150 100 D 50 50 1 1 P
-X ~ 2 0 -150 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_L
 #
 DEF Device_L L 0 40 N N 1 F N
@@ -403,27 +360,74 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Diode_Shotkey_PMEG3020EP,115
+#
+DEF Diode_Shotkey_PMEG3020EP,115 D 0 30 N N 1 F N
+F0 "D" 0 250 50 H V C CNN
+F1 "Diode_Shotkey_PMEG3020EP,115" 0 150 50 H V C CNN
+F2 "SODFL4725X110N" -350 -150 50 H I L CNN
+F3 "" -350 -250 50 H I L CNN
+F4 "Schottky Diodes & Rectifiers SCHOTTKY RECT 30V 2A" -350 -350 50 H I L CNN "Description"
+F5 "1.1" -350 -450 50 H I L CNN "Height"
+F6 "Nexperia" -350 -550 50 H I L CNN "Manufacturer_Name"
+F7 "PMEG3020EP,115" -350 -650 50 H I L CNN "Manufacturer_Part_Number"
+F8 "771-PMEG3020EP115" -350 -750 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Nexperia/PMEG3020EP115/?qs=GcY6OjH1zdnlY%252B06tUqEyw%3D%3D" -350 -850 50 H I L CNN "Mouser Price/Stock"
+F10 "PMEG3020EP,115" -350 -950 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/pmeg3020ep115/nexperia" -350 -1050 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 2 1 1 0 50 0 -50 0 N
+P 4 1 1 10 50 50 50 -50 -50 0 50 50 N
+P 6 1 1 10 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Diode_TVS_SMAJ5.0A
 #
-DEF Diode_TVS_SMAJ5.0A D 0 30 Y Y 1 F N
-F0 "D" 0 150 50 H V C CNN
-F1 "Diode_TVS_SMAJ5.0A" 0 -150 50 H V C CNN
-F2 "DIOM5026X229N" -250 -250 50 H I L CNN
-F3 "https://detail.tmall.com/item.htm?id=548354020241&ali_refid=a3_430583_1006:1109983619:N:3Uw9kZ3UMDT/QL57nh1fXA==:ab063b49c94624768a940a913313feb0&ali_trackid=1_ab063b49c94624768a940a913313feb0&spm=a230r.1.14.1" -250 -350 50 H I L CNN
-F4 "BOURNS - SMAJ5.0A - TVS Diode, TRANSZORB SMAJ Series, Unidirectional, 5 V, 9.2 V, DO-214AC (SMA), 2 Pins" -250 -450 50 H I L CNN "Description"
-F5 "2.29" -250 -550 50 H I L CNN "Height"
-F6 "Bourns" -250 -650 50 H I L CNN "Manufacturer_Name"
-F7 "SMAJ5.0A" -250 -750 50 H I L CNN "Manufacturer_Part_Number"
-F8 "652-SMAJ5.0A" -250 -850 50 H I L CNN "Mouser Part Number"
-F9 "https://www.mouser.co.uk/ProductDetail/Bourns/SMAJ50A?qs=A3H9pljuJ8RbLIvzFxDfUA%3D%3D" -250 -950 50 H I L CNN "Mouser Price/Stock"
-F10 "SMAJ5.0A" -250 -1050 50 H I L CNN "Arrow Part Number"
-F11 "https://www.arrow.com/en/products/smaj5.0a/bourns" -250 -1150 50 H I L CNN "Arrow Price/Stock"
+DEF Diode_TVS_SMAJ5.0A D 0 30 N N 1 F N
+F0 "D" 0 200 50 H V C BNN
+F1 "Diode_TVS_SMAJ5.0A" 0 100 50 H V C BNN
+F2 "DIOM5026X229N" -350 -150 50 H I L BNN
+F3 "" -350 -250 50 H I L BNN
+F4 "Littelfuse SMAJ5.0A, Uni-Directional TVS Diode, 400W, 2-Pin DO-214AC" -350 -350 50 H I L BNN "Description"
+F5 "2.29" -350 -450 50 H I L BNN "Height"
+F6 "LITTELFUSE" -350 -550 50 H I L BNN "Manufacturer_Name"
+F7 "SMAJ5.0A" -350 -650 50 H I L BNN "Manufacturer_Part_Number"
+F8 "576-SMAJ5.0A" -350 -750 50 H I L BNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Littelfuse/SMAJ50A?qs=2VFNtWizgicfetZVA4gWHA%3D%3D" -350 -850 50 H I L BNN "Mouser Price/Stock"
+F10 "SMAJ5.0A" -350 -950 50 H I L BNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/smaj5.0a/littelfuse" -350 -1050 50 H I L BNN "Arrow Price/Stock"
 DRAW
-P 2 0 1 10 -50 50 0 100 N
-P 3 0 1 10 -50 50 -50 -50 -100 -100 N
+P 3 1 1 10 -30 50 -50 50 -50 -50 N
 P 4 1 1 10 50 50 50 -50 -50 0 50 50 N
-X ~ ~ -150 0 100 R 50 50 1 1 P
-X ~ ~ 150 0 100 L 50 50 1 1 P
+X A1 1 -150 0 100 R 50 50 1 1 P
+X A2 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Ferrite_Bead_BLM18KG121TH1D
+#
+DEF Ferrite_Bead_BLM18KG121TH1D FB 0 30 N N 1 F N
+F0 "FB" 0 300 50 H V C CNN
+F1 "Ferrite_Bead_BLM18KG121TH1D" 0 200 50 H V C CNN
+F2 "BLM18KG101TH1D" -350 -250 50 H I L CNN
+F3 "" -350 -350 50 H I L CNN
+F4 "BLM18_H1D Series EMI Suppression Filter 120+/-25% at 100MHz 3A @85" -350 -450 50 H I L CNN "Description"
+F5 "0.75" -350 -550 50 H I L CNN "Height"
+F6 "Murata Electronics" -350 -650 50 H I L CNN "Manufacturer_Name"
+F7 "BLM18KG121TH1D" -350 -750 50 H I L CNN "Manufacturer_Part_Number"
+F8 "81-BLM18KG121TH1D" -350 -850 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/BLM18KG121TH1D/?qs=DXqDLUyyb5VDoB6j6ePjSQ%3D%3D" -350 -950 50 H I L CNN "Mouser Price/Stock"
+F10 "BLM18KG121TH1D" -350 -1050 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/blm18kg121th1d/murata-manufacturing" -350 -1150 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 2 1 1 0 -50 0 -51 0 N
+P 2 1 1 0 50 0 48 0 N
+P 5 1 1 0 -16 -109 -89 -67 12 109 85 66 -16 -109 N
+X ~ 1 -150 0 100 R 50 50 1 1 P
+X ~ 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
