@@ -167,20 +167,6 @@ Wire Wire Line
 	6700 3400 6950 3400
 Wire Wire Line
 	6950 3400 6950 3850
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 60C8C86F
-P 1750 3850
-AR Path="/60C8C86F" Ref="J?"  Part="1" 
-AR Path="/60BA4931/60C8C86F" Ref="J6"  Part="1" 
-AR Path="/60BA4931/60C6FA96/60C8C86F" Ref="J?"  Part="1" 
-F 0 "J6" H 1668 3525 50  0000 C CNN
-F 1 "Battery_175mAh" H 1668 3616 50  0000 C CNN
-F 2 "" H 1750 3850 50  0001 C CNN
-F 3 "~" H 1750 3850 50  0001 C CNN
-	1    1750 3850
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1950 3850 2000 3850
 Wire Wire Line
@@ -207,7 +193,7 @@ AR Path="/60BA4931/60C9133A" Ref="J7"  Part="1"
 AR Path="/60BA4931/60C34886/60C9133A" Ref="J?"  Part="1" 
 F 0 "J7" H 1857 2117 50  0000 C CNN
 F 1 "USB_B_Micro" H 1857 2026 50  0000 C CNN
-F 2 "" H 1950 1600 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 1950 1600 50  0001 C CNN
 F 3 "~" H 1950 1600 50  0001 C CNN
 	1    1800 1650
 	1    0    0    -1  
@@ -354,5 +340,22 @@ F 10 "BLM18KG121TH1D" H 7550 1550 50  0001 L CNN "Arrow Part Number"
 F 11 "https://www.arrow.com/en/products/blm18kg121th1d/murata-manufacturing" H 7550 1450 50  0001 L CNN "Arrow Price/Stock"
 	1    7900 2600
 	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_JST_2PIN:S2B-PH-K-S_LF__SN_ J6
+U 1 1 60683BAA
+P 1750 3800
+F 0 "J6" H 1668 3525 50  0000 C CNN
+F 1 "S2B-PH-K-S_LF__SN_" H 1668 3616 50  0000 C CNN
+F 2 "Connector_Skywire:SHDRRA2W50P0X200_1X2_590X760X480P" H 1350 3600 50  0001 L CNN
+F 3 "http://uk.rs-online.com/web/p/products/8201494" H 1350 3500 50  0001 L CNN
+F 4 "PH-2.0mm Header side entry 2 way JST PH Series, Series Number S2B, 2mm Pitch 2 Way 1 Row Right Angle PCB Header, Through Hole Termination, 2A" H 1350 3400 50  0001 L CNN "Description"
+F 5 "4.8" H 1350 3300 50  0001 L CNN "Height"
+F 6 "JST (JAPAN SOLDERLESS TERMINALS)" H 1350 3200 50  0001 L CNN "Manufacturer_Name"
+F 7 "S2B-PH-K-S(LF)(SN)" H 1350 3100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "S2B-PH-K-S(LF)(SN)" H 1350 2800 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/s2b-ph-k-s-lf-sn/jst-manufacturing" H 1350 2700 50  0001 L CNN "Arrow Price/Stock"
+	1    1750 3800
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC

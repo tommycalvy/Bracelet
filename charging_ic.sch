@@ -36,7 +36,7 @@ F 11 "https://www.arrow.com/en/products/mcp73811t-420iot/microchip-technology" H
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 3450 4700 3450
+	5100 3450 4650 3450
 Wire Wire Line
 	5100 3850 5100 3450
 Connection ~ 5100 3450
@@ -62,35 +62,35 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60C41DDC
-P 4700 3900
+P 4650 3900
 AR Path="/60C41DDC" Ref="#PWR?"  Part="1" 
 AR Path="/60BA4931/60C41DDC" Ref="#PWR?"  Part="1" 
 AR Path="/60BA4931/60C34886/60C41DDC" Ref="#PWR022"  Part="1" 
-F 0 "#PWR022" H 4700 3650 50  0001 C CNN
-F 1 "GND" H 4705 3727 50  0000 C CNN
-F 2 "" H 4700 3900 50  0001 C CNN
-F 3 "" H 4700 3900 50  0001 C CNN
-	1    4700 3900
+F 0 "#PWR022" H 4650 3650 50  0001 C CNN
+F 1 "GND" H 4655 3727 50  0000 C CNN
+F 2 "" H 4650 3900 50  0001 C CNN
+F 3 "" H 4650 3900 50  0001 C CNN
+	1    4650 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4700 3450 4700 3500
+	4650 3450 4650 3550
 $Comp
 L Device:C C?
 U 1 1 60C41DE3
-P 4700 3650
+P 4650 3700
 AR Path="/60C41DE3" Ref="C?"  Part="1" 
 AR Path="/60BA4931/60C41DE3" Ref="C?"  Part="1" 
 AR Path="/60BA4931/60C34886/60C41DE3" Ref="C19"  Part="1" 
-F 0 "C19" H 4815 3696 50  0000 L CNN
-F 1 "4.7uF" H 4815 3605 50  0000 L CNN
-F 2 "" H 4738 3500 50  0001 C CNN
-F 3 "~" H 4700 3650 50  0001 C CNN
-	1    4700 3650
+F 0 "C19" H 4765 3746 50  0000 L CNN
+F 1 "4.7uF" H 4765 3655 50  0000 L CNN
+F 2 "" H 4688 3550 50  0001 C CNN
+F 3 "~" H 4650 3700 50  0001 C CNN
+	1    4650 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4700 3800 4700 3900
+	4650 3850 4650 3900
 Wire Wire Line
 	6200 3450 6600 3450
 Wire Wire Line
@@ -126,9 +126,9 @@ F 3 "~" H 6600 3650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6600 3800 6600 3900
-Connection ~ 4700 3450
+Connection ~ 4650 3450
 Wire Wire Line
-	4400 2950 4800 2950
+	4150 2950 4800 2950
 Wire Wire Line
 	4800 2950 4800 2850
 Wire Wire Line
@@ -139,7 +139,7 @@ Connection ~ 6650 2400
 Wire Wire Line
 	6650 2400 6850 2400
 Wire Wire Line
-	4400 3450 4700 3450
+	4150 3450 4650 3450
 $Comp
 L power:GND #PWR?
 U 1 1 60C41E10
@@ -171,41 +171,41 @@ F 3 "~" H 6650 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 2950 4400 3450
+	4150 2950 4150 3450
 Wire Wire Line
-	4600 2400 4800 2400
+	4350 2400 4800 2400
 Connection ~ 4800 2400
 Wire Wire Line
-	4400 2700 4400 2950
-Connection ~ 4400 2950
+	4150 2700 4150 2950
+Connection ~ 4150 2950
 $Comp
 L Device:Q_PMOS_DSG Q?
 U 1 1 60C41E23
-P 4400 2500
+P 4150 2500
 AR Path="/60C41E23" Ref="Q?"  Part="1" 
 AR Path="/60BA4931/60C41E23" Ref="Q?"  Part="1" 
 AR Path="/60BA4931/60C34886/60C41E23" Ref="Q1"  Part="1" 
-F 0 "Q1" V 4742 2500 50  0000 C CNN
-F 1 "Q_PMOS_DSG" V 4651 2500 50  0000 C CNN
-F 2 "" H 4600 2600 50  0001 C CNN
-F 3 "~" H 4400 2500 50  0001 C CNN
-	1    4400 2500
+F 0 "Q1" V 4492 2500 50  0000 C CNN
+F 1 "Q_PMOS_DSG" V 4401 2500 50  0000 C CNN
+F 2 "" H 4350 2600 50  0001 C CNN
+F 3 "~" H 4150 2500 50  0001 C CNN
+	1    4150 2500
 	0    -1   -1   0   
 $EndComp
 Text HLabel 6850 2400 2    50   Output ~ 0
 VCC_LOAD
 Wire Wire Line
-	4400 3450 4100 3450
-Connection ~ 4400 3450
-Text HLabel 4100 3450 0    50   Input ~ 0
+	4150 3450 3850 3450
+Connection ~ 4150 3450
+Text HLabel 3850 3450 0    50   Input ~ 0
 VCC_IN_USB
 Text Label 6900 3450 0    50   ~ 0
 VCC_CHARGE
 Wire Wire Line
 	6600 3450 7400 3450
 Wire Wire Line
-	3500 2400 4200 2400
-Text Label 3550 2400 0    50   ~ 0
+	3250 2400 3950 2400
+Text Label 3300 2400 0    50   ~ 0
 VCC_BAT
 Text Label 4600 4950 0    50   ~ 0
 VCC_BAT
@@ -243,4 +243,30 @@ F 11 "https://www.arrow.com/en/products/pmeg3020ep115/nexperia" H 4450 1650 50  
 	1    4800 2700
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	4150 3450 4150 3550
+$Comp
+L power:GND #PWR030
+U 1 1 606A84E4
+P 4150 3900
+F 0 "#PWR030" H 4150 3650 50  0001 C CNN
+F 1 "GND" H 4155 3727 50  0000 C CNN
+F 2 "" H 4150 3900 50  0001 C CNN
+F 3 "" H 4150 3900 50  0001 C CNN
+	1    4150 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R15
+U 1 1 606A9537
+P 4150 3700
+F 0 "R15" H 4218 3746 50  0000 L CNN
+F 1 "10k" H 4218 3655 50  0000 L CNN
+F 2 "" V 4190 3690 50  0001 C CNN
+F 3 "~" H 4150 3700 50  0001 C CNN
+	1    4150 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3850 4150 3900
 $EndSCHEMATC
