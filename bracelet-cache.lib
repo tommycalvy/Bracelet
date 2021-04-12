@@ -3,11 +3,11 @@ EESchema-LIBRARY Version 2.4
 #
 # Battery_Charger_MCP73811T-420I_OT
 #
-DEF Battery_Charger_MCP73811T-420I_OT IC 0 30 Y Y 1 F N
+DEF Battery_Charger_MCP73811T-420I_OT IC 0 30 N Y 1 F N
 F0 "IC" 0 500 50 H V C CNN
 F1 "Battery_Charger_MCP73811T-420I_OT" 0 400 50 H V C CNN
 F2 "SOT95P270X145-5N" -350 -400 50 H I L CNN
-F3 "http://docs-asia.electrocomponents.com/webdocs/0d2b/0900766b80d2b53c.pdf" -350 -500 50 H I L CNN
+F3 "" -350 -500 50 H I L CNN
 F4 "Li-Ion Charge Controller 4.2V SOT23-5" -350 -600 50 H I L CNN "Description"
 F5 "1.45" -350 -700 50 H I L CNN "Height"
 F6 "Microchip" -350 -800 50 H I L CNN "Manufacturer_Name"
@@ -55,6 +55,29 @@ X PG C3 650 -300 200 L 50 50 0 0 P
 X VOUT D1 650 200 200 L 50 50 0 0 P
 X FB D2 650 -50 200 L 50 50 0 0 P
 X SS D3 -650 -550 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# Button_Switch_KMR231GLFS
+#
+DEF Button_Switch_KMR231GLFS S 0 30 N Y 1 F N
+F0 "S" 0 350 50 H V C CNN
+F1 "Button_Switch_KMR231GLFS" 0 250 50 H V C CNN
+F2 "KMR2_1" -150 -300 50 H I L CNN
+F3 "" -150 -400 50 H I L CNN
+F4 "Tactile Switches Spst-No 300Gf Gw Smd" -150 -500 50 H I L CNN "Description"
+F5 "C & K COMPONENTS" -150 -700 50 H I L CNN "Manufacturer_Name"
+F6 "KMR231GLFS" -150 -800 50 H I L CNN "Manufacturer_Part_Number"
+F7 "611-KMR231GLFS" -150 -900 50 H I L CNN "Mouser Part Number"
+F8 "https://www.mouser.co.uk/ProductDetail/CK/KMR231GLFS?qs=sb%252But3Lm4x27Wura%2FoX2iQ%3D%3D" -150 -1000 50 H I L CNN "Mouser Price/Stock"
+F9 "KMR231GLFS" -150 -1100 50 H I L CNN "Arrow Part Number"
+F10 "https://www.arrow.com/en/products/kmr231glfs/ck" -150 -1200 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 -200 150 200 150 200 -150 -200 -150 -200 150 f
+X 1 1 -400 -50 200 R 50 50 0 0 P
+X 2 2 400 50 200 L 50 50 0 0 P
+X 3 3 -400 50 200 R 50 50 0 0 P
+X 4 4 400 -50 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
@@ -310,57 +333,6 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_L
-#
-DEF Device_L L 0 40 N N 1 F N
-F0 "L" -50 0 50 V V C CNN
-F1 "Device_L" 75 0 50 V V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Choke_*
- *Coil*
- Inductor_*
- L_*
-$ENDFPLIST
-DRAW
-A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
-A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
-A 0 25 25 -899 899 0 1 0 N 0 0 0 50
-A 0 75 25 -899 899 0 1 0 N 0 50 0 100
-X 1 1 0 150 50 D 50 50 1 1 P
-X 2 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Q_PMOS_DSG
-#
-DEF Device_Q_PMOS_DSG Q 0 0 Y N 1 F N
-F0 "Q" 200 50 50 H V L CNN
-F1 "Device_Q_PMOS_DSG" 200 -50 50 H V L CNN
-F2 "" 200 100 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 65 0 110 0 1 10 N
-C 100 -70 10 0 1 0 F
-C 100 70 10 0 1 0 F
-P 2 0 1 0 10 0 -100 0 N
-P 2 0 1 10 10 75 10 -75 N
-P 2 0 1 10 30 -50 30 -90 N
-P 2 0 1 10 30 20 30 -20 N
-P 2 0 1 10 30 90 30 50 N
-P 2 0 1 0 100 100 100 70 N
-P 3 0 1 0 100 -100 100 0 30 0 N
-P 4 0 1 0 30 70 130 70 130 -70 30 -70 N
-P 4 0 1 0 90 0 50 15 50 -15 90 0 F
-P 4 0 1 0 110 -20 115 -15 145 -15 150 -10 N
-P 4 0 1 0 130 -15 115 10 145 10 130 -15 N
-X D 1 100 200 100 D 50 50 1 1 P
-X S 2 100 -200 100 U 50 50 1 1 P
-X G 3 -200 0 100 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
 # Device_R_US
 #
 DEF Device_R_US R 0 0 N Y 1 F N
@@ -482,20 +454,57 @@ X BAT C3 -550 200 200 R 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# Switch_SW_Push
+# Inductor_1v5uH_DFE252012P-1R5M=P2
 #
-DEF Switch_SW_Push SW 0 40 N N 1 F N
-F0 "SW" 50 100 50 H V L CNN
-F1 "Switch_SW_Push" 0 -60 50 H V C CNN
-F2 "" 0 200 50 H I C CNN
-F3 "" 0 200 50 H I C CNN
+DEF Inductor_1v5uH_DFE252012P-1R5M=P2 L 0 30 N N 1 F N
+F0 "L" 0 250 50 H V C CNN
+F1 "Inductor_1v5uH_DFE252012P-1R5M=P2" 0 150 50 H V C CNN
+F2 "DFE2HCAH1R0MJ0L" -350 -200 50 H I L CNN
+F3 "" -350 -300 50 H I L CNN
+F4 "Toko DFE252012P Series Shielded Wire-wound SMD Inductor with a Powered Iron Core, 1.5 uH Wire-Wound 3.9A Idc" -350 -400 50 H I L CNN "Description"
+F5 "1.2" -350 -500 50 H I L CNN "Height"
+F6 "Murata Electronics" -350 -600 50 H I L CNN "Manufacturer_Name"
+F7 "DFE252012P-1R5M=P2" -350 -700 50 H I L CNN "Manufacturer_Part_Number"
+F8 "81-DFE252012P-1R5MP2" -350 -800 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/DFE252012P-1R5M%3dP2?qs=KuGPmAKtFKVOutr53B1A3A%3D%3D" -350 -900 50 H I L CNN "Mouser Price/Stock"
+F10 "DFE252012P-1R5M=P2" -350 -1000 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/dfe252012p-1r5mp2/murata-manufacturing" -350 -1100 50 H I L CNN "Arrow Price/Stock"
 DRAW
-C -80 0 20 0 1 0 N
-C 80 0 20 0 1 0 N
-P 2 0 1 0 0 50 0 120 N
-P 2 0 1 0 100 50 -100 50 N
-X 1 1 -200 0 100 R 50 50 0 1 P
-X 2 2 200 0 100 L 50 50 0 1 P
+A -75 0 25 1 1799 1 1 0 N -50 0 -100 0
+A -25 0 25 1 1799 1 1 0 N 0 0 -50 0
+A 25 0 25 1 1799 1 1 0 N 50 0 0 0
+A 75 0 25 1 1799 1 1 0 N 100 0 50 0
+X 1 1 -150 0 50 R 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# PMosfet_CSD25402Q3AT
+#
+DEF PMosfet_CSD25402Q3AT Q 0 30 N Y 1 F N
+F0 "Q" 0 500 50 H V C CNN
+F1 "PMosfet_CSD25402Q3AT" 0 400 50 H V C CNN
+F2 "CSD25402Q3AT" -300 -450 50 H I L CNN
+F3 "" -300 -550 50 H I L CNN
+F4 "MOSFET -20V, P ch NexFET MOSFET , single SON 3x3, 8.9mOhm 8-VSONP -55 to 150" -300 -650 50 H I L CNN "Description"
+F5 "0.9" -300 -750 50 H I L CNN "Height"
+F6 "Texas Instruments" -300 -850 50 H I L CNN "Manufacturer_Name"
+F7 "CSD25402Q3AT" -300 -950 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-CSD25402Q3AT" -300 -1050 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CSD25402Q3AT/?qs=Cb2nCFKsA8rIEmINOYCi9A%3D%3D" -300 -1150 50 H I L CNN "Mouser Price/Stock"
+F10 "CSD25402Q3AT" -300 -1250 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/csd25402q3at/texas-instruments" -300 -1350 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 -300 300 300 300 300 -300 -300 -300 -300 300 f
+X D_1 1 -500 0 200 R 50 50 0 0 P
+X D_2 2 -500 -100 200 R 50 50 0 0 P
+X D_3 3 -500 -200 200 R 50 50 0 0 P
+X G 4 -500 200 200 R 50 50 0 0 P
+X S_1 5 500 200 200 L 50 50 0 0 P
+X S_2 6 500 100 200 L 50 50 0 0 P
+X S_3 7 500 0 200 L 50 50 0 0 P
+X S_4 8 500 -100 200 L 50 50 0 0 P
+X S_5 9 500 -200 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #

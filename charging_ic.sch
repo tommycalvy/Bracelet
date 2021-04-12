@@ -172,40 +172,18 @@ F 3 "~" H 6650 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4150 2950 4150 3450
-Wire Wire Line
-	4350 2400 4800 2400
-Connection ~ 4800 2400
-Wire Wire Line
-	4150 2700 4150 2950
-Connection ~ 4150 2950
-$Comp
-L Device:Q_PMOS_DSG Q?
-U 1 1 60C41E23
-P 4150 2500
-AR Path="/60C41E23" Ref="Q?"  Part="1" 
-AR Path="/60BA4931/60C41E23" Ref="Q?"  Part="1" 
-AR Path="/60BA4931/60C34886/60C41E23" Ref="Q1"  Part="1" 
-F 0 "Q1" V 4492 2500 50  0000 C CNN
-F 1 "Q_PMOS_DSG" V 4401 2500 50  0000 C CNN
-F 2 "" H 4350 2600 50  0001 C CNN
-F 3 "~" H 4150 2500 50  0001 C CNN
-	1    4150 2500
-	0    -1   -1   0   
-$EndComp
 Text HLabel 6850 2400 2    50   Output ~ 0
 VCC_LOAD
 Wire Wire Line
-	4150 3450 3850 3450
+	4150 3450 3550 3450
 Connection ~ 4150 3450
-Text HLabel 3850 3450 0    50   Input ~ 0
+Text HLabel 3550 3450 0    50   Input ~ 0
 VCC_IN_USB
 Text Label 6900 3450 0    50   ~ 0
 VCC_CHARGE
 Wire Wire Line
 	6600 3450 7400 3450
-Wire Wire Line
-	3250 2400 3950 2400
-Text Label 3300 2400 0    50   ~ 0
+Text Label 2350 2400 0    50   ~ 0
 VCC_BAT
 Text Label 4600 4950 0    50   ~ 0
 VCC_BAT
@@ -262,11 +240,74 @@ U 1 1 606A9537
 P 4150 3700
 F 0 "R15" H 4218 3746 50  0000 L CNN
 F 1 "10k" H 4218 3655 50  0000 L CNN
-F 2 "" V 4190 3690 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4190 3690 50  0001 C CNN
 F 3 "~" H 4150 3700 50  0001 C CNN
 	1    4150 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4150 3850 4150 3900
+$Comp
+L PMosfet:CSD25402Q3AT Q1
+U 1 1 60723D24
+P 3550 2600
+F 0 "Q1" H 3550 3065 50  0000 C CNN
+F 1 "CSD25402Q3AT" H 3550 2974 50  0000 C CNN
+F 2 "Mosfet_TI:CSD25402Q3AT" H 3250 2150 50  0001 L CNN
+F 3 "https://www.ti.com/lit/gpn/CSD25402Q3A" H 3250 2050 50  0001 L CNN
+F 4 "MOSFET -20V, P ch NexFET MOSFET , single SON 3x3, 8.9mOhm 8-VSONP -55 to 150" H 3250 1950 50  0001 L CNN "Description"
+F 5 "0.9" H 3250 1850 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 3250 1750 50  0001 L CNN "Manufacturer_Name"
+F 7 "CSD25402Q3AT" H 3250 1650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-CSD25402Q3AT" H 3250 1550 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CSD25402Q3AT/?qs=Cb2nCFKsA8rIEmINOYCi9A%3D%3D" H 3250 1450 50  0001 L CNN "Mouser Price/Stock"
+F 10 "CSD25402Q3AT" H 3250 1350 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/csd25402q3at/texas-instruments" H 3250 1250 50  0001 L CNN "Arrow Price/Stock"
+	1    3550 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 2600 4150 2600
+Wire Wire Line
+	4150 2600 4150 2500
+Wire Wire Line
+	4150 2400 4050 2400
+Wire Wire Line
+	4050 2500 4150 2500
+Connection ~ 4150 2500
+Wire Wire Line
+	4150 2500 4150 2400
+Wire Wire Line
+	3050 2400 2950 2400
+Wire Wire Line
+	2950 2800 3050 2800
+Wire Wire Line
+	3050 2700 2950 2700
+Connection ~ 2950 2700
+Wire Wire Line
+	2950 2700 2950 2800
+Wire Wire Line
+	3050 2600 2950 2600
+Connection ~ 2950 2600
+Wire Wire Line
+	2950 2600 2950 2700
+Wire Wire Line
+	2950 2400 2950 2500
+Wire Wire Line
+	3050 2500 2950 2500
+Connection ~ 2950 2500
+Wire Wire Line
+	2950 2500 2950 2600
+Connection ~ 2950 2400
+Wire Wire Line
+	2300 2400 2950 2400
+Wire Wire Line
+	4150 2400 4800 2400
+Connection ~ 4150 2400
+Connection ~ 4800 2400
+Wire Wire Line
+	4150 2950 4150 2800
+Wire Wire Line
+	4150 2800 4050 2800
+Connection ~ 4150 2950
 $EndSCHEMATC

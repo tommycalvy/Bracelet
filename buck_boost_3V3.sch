@@ -41,20 +41,6 @@ Wire Wire Line
 	4250 2750 4750 2750
 Wire Wire Line
 	5550 2750 5550 3200
-$Comp
-L Device:L L?
-U 1 1 60C6C1B2
-P 4900 2750
-AR Path="/60C6C1B2" Ref="L?"  Part="1" 
-AR Path="/60BA4931/60C6C1B2" Ref="L?"  Part="1" 
-AR Path="/60BA4931/60C66E04/60C6C1B2" Ref="L2"  Part="1" 
-F 0 "L2" V 5090 2750 50  0000 C CNN
-F 1 "1.5uH" V 4999 2750 50  0000 C CNN
-F 2 "" H 4900 2750 50  0001 C CNN
-F 3 "~" H 4900 2750 50  0001 C CNN
-	1    4900 2750
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5050 2750 5550 2750
 Wire Wire Line
@@ -320,4 +306,23 @@ Text HLabel 7950 3350 2    50   Output ~ 0
 VCC_3V3
 Text HLabel 3450 3350 0    50   Input ~ 0
 VCC_IN
+$Comp
+L Inductor_1v5uH:DFE252012P-1R5M=P2 L2
+U 1 1 607620B4
+P 4900 2750
+F 0 "L2" H 4900 2940 50  0000 C CNN
+F 1 "DFE252012P-1R5M=P2" H 4900 2849 50  0000 C CNN
+F 2 "Inductor_SMD:DFE2HCAH1R0MJ0L" H 4550 2550 50  0001 L CNN
+F 3 "https://psearch.en.murata.com/inductor/product/DFE252012P-1R5M%23.html" H 4550 2450 50  0001 L CNN
+F 4 "Toko DFE252012P Series Shielded Wire-wound SMD Inductor with a Powered Iron Core, 1.5 uH Wire-Wound 3.9A Idc" H 4550 2350 50  0001 L CNN "Description"
+F 5 "1.2" H 4550 2250 50  0001 L CNN "Height"
+F 6 "Murata Electronics" H 4550 2150 50  0001 L CNN "Manufacturer_Name"
+F 7 "DFE252012P-1R5M=P2" H 4550 2050 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "81-DFE252012P-1R5MP2" H 4550 1950 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/DFE252012P-1R5M%3dP2?qs=KuGPmAKtFKVOutr53B1A3A%3D%3D" H 4550 1850 50  0001 L CNN "Mouser Price/Stock"
+F 10 "DFE252012P-1R5M=P2" H 4550 1750 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/dfe252012p-1r5mp2/murata-manufacturing" H 4550 1650 50  0001 L CNN "Arrow Price/Stock"
+	1    4900 2750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
